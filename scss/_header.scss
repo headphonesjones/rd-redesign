@@ -1,0 +1,30 @@
+#menu-icon{
+	width: 40px;
+	height: 45px;
+	float: left;
+	margin-top: 7.5px;
+}
+#top-bar{
+	height: 60px;
+	background-color: rgba(20,20,20, .6);
+}
+
+#logo{
+	padding: 5px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 60px;
+}
+#logo > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+@media screen and (min-width: 640px) {
+	header {
+		height: initial;
+	}
+}
