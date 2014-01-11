@@ -73,6 +73,10 @@
 .show-name{
   font-size: 60px;
   overflow: scroll;
+  height: 60px;
+}
+.show-hosts{
+  height: 50px;
 }
 @media screen and (max-width: 1024px){
   .schedule-square, .show-square{

@@ -7,7 +7,7 @@ angular.module('radioApp')
 
   return {
     get: function(callback) {
-      $http.jsonp(apiUrl + 'shows/' + $routeParams['id'] +'/?callback=JSON_CALLBACK').
+      $http.jsonp(apiUrl + 'shows/' + $routeParams['showId'] +'/?callback=JSON_CALLBACK').
       success(function(data, status, headers, config) {
             callback(data);
       });

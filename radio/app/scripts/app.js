@@ -22,6 +22,10 @@ angular.module('radioApp', [
         templateUrl: 'views/shows.html',
         controller: 'ShowListController'
       })
+      .when('/shows/:showId', {
+        templateUrl: 'views/show.html',
+        controller: 'ShowController'
+      })
       .when('/media', {
         templateUrl: 'views/media.html',
       })

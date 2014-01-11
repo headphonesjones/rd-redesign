@@ -17,6 +17,16 @@ angular.module('radioApp')
 			}
 			return strValue;
 		}
+		scope.getWidth = function() {
+			return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		};
+
+		scope.$watch(scope.getWidth, function(newValue, oldValue) {
+			if (newValue != oldValue) {
+				
+			console.log(newValue + " " + oldValue);
+			}
+		});
 
 		scope.$watch('show', function() {
 			
@@ -25,15 +35,27 @@ angular.module('radioApp')
 			var ow = elem.offsetWidth;
 			if( oh < elem.scrollHeight || ow < elem.scrollWidth){
 				var originalSize = parseFloat(getStyle(elem, "font-size"));
-				var newSize = originalSize;
+				var newSize = 30;
+				if (elem.length < 10) {
+				  newSize = 40;
+				}
+				elem.style.fontSize = newSize + "px"
 
-				while (elem.scrollHeight > oh || elem.scrollWidth > ow) {
-					
-					newSize = newSize - 3;
+
+				while (elem.scrollHeight <= oh) {
+
+					newSize = newSize + 1;
 					elem.style.fontSize = newSize + "px"
 				}
 
+				while (elem.scrollHeight > oh || elem.scrollWidth > ow) {
+					
+					newSize--;
+					
+					elem.style.fontSize = newSize + "px"
 
+				}
+				//console.log(newSize/elem.innerHTML.length);
 			}
 			else{
 //			    console.log("I'm not overflowing");
