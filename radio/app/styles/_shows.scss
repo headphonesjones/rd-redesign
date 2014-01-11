@@ -1,0 +1,41 @@
+#show-container > h3{
+  color: #FFF;
+  position: relative;
+  top: 10px;
+}
+.schedule-square, .show-square{
+  background-color: #FFF;
+  border-left: 1px solid #F1F1F1;
+  border-right: 1px solid #f1f1f1;
+  text-align: center;
+  margin-top: 10px;
+  border-bottom: 4px solid #F1F1F1;
+}
+.show-square:hover{
+  border-bottom: 4px solid #00CDCD;
+}
+.schedule-square:hover{
+  border-bottom: 4px solid #00CDCD;
+}
+.times{
+  background-color: #F1F1F1;
+  height: 30px;
+  padding-top: 2px;
+  text-align: center;
+  h6{
+    position: relative;
+    right: 5px;
+    }
+}
+.blue-text{
+  color: #00CDCD;
+}
+.show-about{
+  border-left: 1px solid rgba(200,200,200, .5);
+}
+.show-about > p{
+  color: #FFF;
+}
+#social-show-container > img {
+  display: inline;
+}
