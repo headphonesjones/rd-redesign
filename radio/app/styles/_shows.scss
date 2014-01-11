@@ -4,6 +4,7 @@
   top: 10px;
 }
 .schedule-square, .show-square{
+  height: 440px;
   background-color: #FFF;
   border-left: 1px solid #F1F1F1;
   border-right: 1px solid #f1f1f1;
@@ -43,10 +44,16 @@
   padding-top: 2px;
   text-align: center;
   border-bottom: 2px solid #00CDCD;
+  font-size: .9em;
   h6{
     position: relative;
     right: 5px;
+    font-size: .9em;
     }
+}
+.times-container{
+  position: absolute;
+  bottom: 0px;
 }
 .blue-text{
   color: #00CDCD;
@@ -60,8 +67,23 @@
 #social-show-container > img {
   display: inline;
 }
-
 .show-name{
-  height: 50px;
+  height: 60px;
+  font-size: 60px;
   overflow: scroll;
+}
+@media screen and (max-width: 1024px){
+  .schedule-square, .show-square{
+    height: 580px;
+  }
+}
+@media screen and (max-width: 640px){
+  .schedule-square, .show-square{
+    height: 460px;
+  }
+}
+@media screen and (max-width: 354px){
+  .schedule-square, .show-square{
+    height: 480px;
+  }
 }

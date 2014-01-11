@@ -21,15 +21,18 @@ angular.module('radioApp')
 		scope.$watch('show', function() {
 			
 			elem = elem[0];
-			if( elem.offsetHeight < elem.scrollHeight){
+			var oh = elem.offsetHeight;
+			var ow = elem.offsetWidth;
+			if( oh < elem.scrollHeight || ow < elem.scrollWidth){
 				var originalSize = parseFloat(getStyle(elem, "font-size"));
 				var newSize = originalSize;
-				elem.style.fontSize = 10 + "px"
-				//while (elem.scrollHeight > elem.offsetHeight) {
-				//	console.log(newSize);
-				//	newSize = originalSize - 1;
-				//	elem.style.fontSize = newSize + "px"
-				//}
+
+				while (elem.scrollHeight > oh || elem.scrollWidth > ow) {
+					
+					newSize = newSize - 3;
+					elem.style.fontSize = newSize + "px"
+				}
+
 
 			}
 			else{
