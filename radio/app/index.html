@@ -31,15 +31,16 @@
           <img ng-click="showNav = !showNav" src="images/menu-icon-w.png" id="menu-icon"/>
           <img src="images/logo.png" id="logo" alt="Radio Depaul Logo" /></span>
       </div>
+      
       <nav ng-show="showNav || width >= 640">
         <ul>
-        <li><a href="wherever">HOME</a></li>
-        <li><a href="wherever">ABOUT</a></li>
-        <li><a href="wherever">SCHEDULE</a></li>
-        <li><a href="wherever">SHOWS</a></li>
-        <li><a href="wherever">SPORTS</a></li>
-        <li><a href="wherever">MEDIA</a></li>
-        <li><a href="wherever">APPLY</a></li>
+        <li><a href="#/">HOME</a></li>
+        <li><a href="#/about">ABOUT</a></li>
+        <li><a href="#/schedule">SCHEDULE</a></li>
+        <li><a href="#/shows">SHOWS</a></li>
+        <li><a href="#/sports">SPORTS</a></li>
+        <li><a href="#/media">MEDIA</a></li>
+        <li><a href="#/apply">APPLY</a></li>
         </ul>
       </nav>
     </header>
@@ -47,23 +48,6 @@
 
 
     <div class="container" ng-view=""></div>
-
-    <div class="row" id="ads-div">
-      <br/>
-      <h4>OUR <b>SPONSORS</b></h4>
-      <div class="small-12 columns">
-        <img src="http://placehold.it/1000x200" style="margin-top: 5px;"/>
-      </div>
-        <div class="small-4 columns">
-          <img src="http://placehold.it/310x150" style="margin-top: 5px;"/>
-        </div>
-        <div class="small-4 columns">
-          <img src="http://placehold.it/310x150" style="margin-top: 5px;"/>
-        </div>
-        <div class="small-4 columns">
-          <img src="http://placehold.it/310x150" style="margin-top: 5px;"/>
-        </div>
-    </div>
 
     <footer class="row">
       <div class="small-12 columns footer-links">
