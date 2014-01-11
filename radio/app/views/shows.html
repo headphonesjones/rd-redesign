@@ -26,15 +26,14 @@
   	  				<h4 class="show-name blue-text" text-fit>{{show.title}}</h4>
   	  				<h5 class="show-hosts" text-fit>{{show.hosts_list}}</h5>
   	  				<h6>{{show.slot.days}}</h6>
-
   	  			</div>
   	  			<div class="row">
               <div class="large-12 small-12 column times-container" ng-show="show.slot">
     	  				<div class="large-4 large-offset-1 columns times">
     	  					<h6>{{show.slot.start_time}}</h6>
     	  				</div>
-    	  				<div class="large-1 columns times" style="padding-top: 6px;">
-    	  				to
+    	  				<div class="large-1 columns times" style="padding-top: 7px;">
+    	  				 <span style="position: relative; right: 4px;">to</span>
     	  				</div>
     	  				<div class="large-4 columns times end-time">
     	  					<h6>{{show.slot.end_time}}</h6>
