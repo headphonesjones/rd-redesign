@@ -26,16 +26,23 @@
   border-bottom: 4px solid #00CDCD;
   border-top: 4px solid #00CDCD;
   background-color: #FAFAFA;
+  .times{
+    border-bottom: 2px solid #FAFAFA;
+  }
 }
 .schedule-square:hover{
   border-top: 4px solid #00CDCD;
   border-bottom: 4px solid #00CDCD;
+  .times{
+    border-bottom: 2px solid #FAFAFA;
+  }
 }
 .times{
   background-color: #F1F1F1;
   height: 30px;
   padding-top: 2px;
   text-align: center;
+  border-bottom: 2px solid #00CDCD;
   h6{
     position: relative;
     right: 5px;
