@@ -4,7 +4,7 @@ angular.module('radioApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'ngAnimate'
+  'ngAnimate',
 ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -20,6 +20,7 @@ angular.module('radioApp', [
       })
       .when('/shows', {
         templateUrl: 'views/shows.html',
+        controller: 'ShowListController'
       })
       .when('/media', {
         templateUrl: 'views/media.html',
