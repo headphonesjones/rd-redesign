@@ -10,11 +10,22 @@
   text-align: center;
   margin-top: 10px;
   border-bottom: 4px solid #F1F1F1;
+  border-top: 4px solid #F1F1F1;
+  cursor: pointer;
+  transition: background-color .15s ease-in;
+  transition: border-top .15s ease-in;
+  transition: border-bottom .15s ease-in;
+  -webkit-transition: background-color.15s ease-in;  
+  -webkit-transition: border-top .15s ease-in;  
+  -webkit-transition: border-bottom .15s ease-in;  
 }
 .show-square:hover{
   border-bottom: 4px solid #00CDCD;
+  border-top: 4px solid #00CDCD;
+  background-color: #FAFAFA;
 }
 .schedule-square:hover{
+  border-top: 4px solid #00CDCD;
   border-bottom: 4px solid #00CDCD;
 }
 .times{
