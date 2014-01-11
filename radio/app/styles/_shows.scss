@@ -4,7 +4,7 @@
   top: 10px;
 }
 .schedule-square, .show-square{
-  height: 440px;
+  height: 445px;
   background-color: #FFF;
   border-left: 1px solid #F1F1F1;
   border-right: 1px solid #f1f1f1;
@@ -38,6 +38,9 @@
     border-bottom: 2px solid #FAFAFA;
   }
 }
+.show-name{
+  height: 80px;
+}
 .times{
   background-color: #F1F1F1;
   height: 30px;
@@ -68,7 +71,6 @@
   display: inline;
 }
 .show-name{
-  height: 60px;
   font-size: 60px;
   overflow: scroll;
 }
@@ -76,14 +78,23 @@
   .schedule-square, .show-square{
     height: 580px;
   }
+  .show-name{
+  height: 60px;
+}
 }
 @media screen and (max-width: 640px){
   .schedule-square, .show-square{
     height: 460px;
   }
+  .show-name{
+  height: 40px;
+}
 }
 @media screen and (max-width: 354px){
   .schedule-square, .show-square{
-    height: 480px;
+    height: 430px;
   }
+  .show-name{
+  height: 90px;
+}
 }
