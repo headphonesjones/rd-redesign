@@ -1,7 +1,7 @@
 #menu-icon{
+	position: absolute;
 	width: 40px;
 	height: 45px;
-	float: left;
 	margin-top: 7.5px;
 }
 #top-bar{
@@ -24,7 +24,14 @@
 
 
 @media screen and (min-width: 640px) {
-	header {
-		height: initial;
+	#top-bar {
+		height: 140px;
+	}
+	#logo{
+		margin-left: 0.9375rem * 2;
+		margin-top: 15px;
+		height: 110px;
+		padding: 0
+
 	}
 }

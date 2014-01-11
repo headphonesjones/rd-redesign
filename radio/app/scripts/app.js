@@ -1,7 +1,6 @@
 'use strict';
 
 angular.module('radioApp', [
-  'ngCookies',
   'ngResource',
   'ngSanitize',
   'ngRoute',
