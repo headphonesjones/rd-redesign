@@ -16,7 +16,8 @@ angular.module('radioApp', [
         templateUrl: 'views/about.html',
       })
       .when('/schedule', {
-        templateUrl: 'views/scheudle.html',
+        templateUrl: 'views/schedule.html',
+        controller: 'ScheduleController'
       })
       .when('/shows', {
         templateUrl: 'views/shows.html',
