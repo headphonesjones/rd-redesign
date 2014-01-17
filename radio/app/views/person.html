@@ -1,0 +1,29 @@
+<div class="row" style="margin-top: 50px; background-color: rgba(0,0,0, .6); padding-bottom: 20px; padding-top: 10px;">
+  <div class="large-12 columns" id="person-container">
+    <div class="large-4 columns small-6">
+      <h3 style="color: #FFF; position:">{{person.name}}</h3>
+      <img ng-src="{{person.avatar_medium}}" style="padding-top: 10px;">
+        <div class="twitter-icon">
+          <img src="images/twitter.png" style="float: right;"/>
+        </div>
+        <div class="facebook-icon" style="float: right;">
+          <img src="images/facebook.png" style="float: right;"/>
+        </div>
+    </div>
+    <div class="large-8 columns small-6 show-about">
+      <h3 class="blue-text">About Me</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+      <h3 class="blue-text">Influences</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+      <h3 class="blue-text">Major</h3>
+        <p>{{person.major}}</p>
+      <h3 class="blue-text">Hometown</h3>
+        <p>{{person.hometown}}</p>
+      <h3 class="blue-text">Class Year</h3>
+        <p>{{person.year}}</p>
+      <h3 class="blue-text">Hosted Show(s)</h3>
+      <a href="" class="button" ng-repeat="">{{show.name}}</a>
+
+    </div>
+  </div>
+</div>
