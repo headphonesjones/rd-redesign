@@ -29,3 +29,17 @@ article{
 		color: white;
 	}
 }
+.on-air-up-next{
+	background-color: rgba(0,0,0, .4);
+	border-bottom: 4px solid #00CDCD;
+	height: 120px;
+	text-align: center;
+}
+.on-air-up-next:hover{
+	background-color: rgba(0,0,0, .8);
+	border-bottom: 4px solid #008B8B;
+}
+#on-air{
+	position: relative;
+	left: 50px;
+}
