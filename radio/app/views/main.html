@@ -8,30 +8,17 @@
       <div class="small-12 columns">
           <h4>LATEST <b>NEWS</b></h4>
       </div>
-      <article>
+      
+      <article ng-repeat="story in news">
         <div class="small-12 columns news-container">
-          <div class="small-6 large-4 columns">
-            <img src="http://placehold.it/300x200" style="margin-top: 5px;"/>
+          <div class="small-12 medium-4 columns">
+            <img ng-src="{{story.image_url}}" width=300 height=200 />
           </div>
-          <div class="small-6 large-8 columns">
+          <div class="small-12 medium-8 columns">
             <header>
-              <h5><b>Post Title</b></h5>
+              <h5><b>{{story.headline}}</b></h5>
             </header>
-            <p>This is the post information...<a href=""> READ MORE</a></p>
-          </div>
-        </div>
-      </article>
-
-      <article>
-        <div class="small-12 columns news-container">
-          <div class="small-6 large-4 columns">
-            <img src="http://placehold.it/300x200" style="margin-top: 5px;"/>
-          </div>
-          <div class="small-6 large-8 columns">
-            <header>
-              <h5><b>Post Title</b></h5>
-            </header>
-            <p>This is the post information...<a href=""> READ MORE</a></p>
+            <p>{{story.snippet}}...<a href="#/news/{{story.id}}"> READ MORE</a></p>
           </div>
         </div>
       </article>
@@ -42,73 +29,25 @@
         <div class="small-12 columns" style="margin-top: 10px;">
             <h4>COMING <b>UP</b></h4>
         </div>
-        <article>
-          <div class="small-6 columns coming-up-container">
+        <article ng-repeat="event in events">
+          <div class="small-12 columns medium-6 coming-up-container">
             <div class="small-12  columns">
               <img src="http://placehold.it/450x150" style="margin-top: 5px;"/>
             </div>
             <div class="small-12 columns">
               <header>
-                <h5><b>Post Title</b></h5>
+                <h5><b>{{event.title}}</b></h5>
               </header>
-              <p>This is the post information...<a href=""> READ MORE</a></p>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="small-6 columns coming-up-container">
-            <div class="small-12  columns">
-              <img src="http://placehold.it/450x150" style="margin-top: 5px;"/>
-            </div>
-            <div class="small-12 columns">
-              <header>
-                <h5><b>Post Title</b></h5>
-              </header>
-              <p>This is the post information...<a href=""> READ MORE</a></p>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="small-6 columns coming-up-container">
-            <div class="small-12  columns">
-              <img src="http://placehold.it/450x150" style="margin-top: 10px;"/>
-            </div>
-            <div class="small-12 columns">
-              <header>
-                <h5><b>Post Title</b></h5>
-              </header>
-              <p>This is the post information...<a href=""> READ MORE</a></p>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="small-6 columns coming-up-container">
-            <div class="small-12  columns">
-              <img src="http://placehold.it/450x150" style="margin-top: 10px;"/>
-            </div>
-            <div class="small-12 columns">
-              <header>
-                <h5><b>Post Title</b></h5>
-              </header>
-              <p>This is the post information...<a href=""> READ MORE</a></p>
+              <p>{{event.first_line}}</p>
+              <p>{{event.second_line || "&nbsp;"}}</p>
             </div>
           </div>
         </article>
       </div>
     <div class="row" id="ads-div">
-      <br/>
       <h4>OUR <b>SPONSORS</b></h4>
-      <div class="small-12 columns">
-        <img src="http://placehold.it/1000x200" style="margin-top: 5px;"/>
-      </div>
-        <div class="small-4 columns">
-          <img src="http://placehold.it/310x150" style="margin-top: 5px;"/>
-        </div>
-        <div class="small-4 columns">
-          <img src="http://placehold.it/310x150" style="margin-top: 5px;"/>
-        </div>
-        <div class="small-4 columns">
-          <img src="http://placehold.it/310x150" style="margin-top: 5px;"/>
-        </div>
+      <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+        <li ng-repeat="sponsor in sponsors"><a ng-href="{{sponsor.url}}"><img ng-src="{{sponsor.image}}"/></a></li>
+      </ul>
     </div>
 
