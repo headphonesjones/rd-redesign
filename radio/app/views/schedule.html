@@ -9,7 +9,7 @@
 	  <hr/>
   		
 
-		<section class="large-3 small-6 columns schedule-square" ng-repeat='slot in filteredShows = (schedule | filter: {weekdays:selected}) | filter: {start_time:"AM"}'>
+		<a ng-href="#/shows/{{slot.show.id}}" class="large-3 small-6 columns schedule-square" ng-repeat='slot in filteredShows = (schedule | filter: {weekdays:selected}) | filter: {start_time:"AM"}'>
 			<div class="large-12 columns">
   			<img ng-src="{{slot.show.avatar_medium}}" style="padding-top: 10px;">
   		</div>
@@ -31,11 +31,11 @@
   				<div class="large-1 columns">
   				</div>
   		</div>
-		</section>
+		</a>
 
 		<h3 style="color: white;">PM</h3>
   	<hr/>
-    <section class="large-3 small-6 columns schedule-square" ng-repeat='slot in filteredShows = (schedule | filter: {weekdays:selected}) | filter: {start_time:"PM"}'>
+    <a ng-href="#/shows/{{slot.show.id}}" class="large-3 small-6 columns schedule-square" ng-repeat='slot in filteredShows = (schedule | filter: {weekdays:selected}) | filter: {start_time:"PM"}'>
       <div class="large-12 columns">
         <img ng-src="{{slot.show.avatar_medium}}" style="padding-top: 10px;">
       </div>
@@ -57,7 +57,7 @@
           <div class="large-1 columns">
           </div>
       </div>
-    </section>
+    </a>
 
   </div>
 	</div>
