@@ -19,6 +19,7 @@
     			<h4 class="show-name">{{slot.show.title}}</h4>
     			<h5>{{slot.show.hosts_list}}</h5>
 
+<<<<<<< HEAD
     			</div>
     			<div class="row">
     				<div class="large-4 large-offset-1 columns times">
@@ -41,12 +42,49 @@
       <section class="large-3 small-6 columns schedule-square" ng-repeat='slot in filteredShows = (schedule | filter: {weekdays:selected}) | filter: {start_time:"PM"}'>
         <div class="large-12 columns">
           <img ng-src="{{slot.show.avatar_medium}}" style="padding-top: 10px;">
+=======
+		<a ng-href="#/shows/{{slot.show.id}}" class="large-3 small-6 columns schedule-square" ng-repeat='slot in filteredShows = (schedule | filter: {weekdays:selected}) | filter: {start_time:"AM"}'>
+			<div class="large-12 columns">
+  			<img ng-src="{{slot.show.avatar_medium}}" style="padding-top: 10px;">
+  		</div>
+  		<div class="large-12 columns">
+  			<h4 class="show-name">{{slot.show.title}}</h4>
+  			<h5>{{slot.show.hosts_list}}</h5>
+
+  			</div>
+  			<div class="row">
+  				<div class="large-4 large-offset-1 columns times">
+  					{{slot.start_time}}
+  				</div>
+  				<div class="large-2 columns" style="padding-top: 5px;">
+  				to
+  				</div>
+  				<div class="large-4 columns times">
+  					{{slot.end_time}}
+  				</div>
+  				<div class="large-1 columns">
+  				</div>
+  		</div>
+		</a>
+
+		<h3 style="color: white;">PM</h3>
+  	<hr/>
+    <a ng-href="#/shows/{{slot.show.id}}" class="large-3 small-6 columns schedule-square" ng-repeat='slot in filteredShows = (schedule | filter: {weekdays:selected}) | filter: {start_time:"PM"}'>
+      <div class="large-12 columns">
+        <img ng-src="{{slot.show.avatar_medium}}" style="padding-top: 10px;">
+      </div>
+      <div class="large-12 columns">
+        <h4 class="show-name">{{slot.show.title}}</h4>
+        <h5>{{slot.show.hosts_list}}</h5>
+
+>>>>>>> e77f4e1a0a3828b88f4dbd13711cb70c795e1eee
         </div>
         <div class="large-12 columns">
           <h4 class="show-name">{{slot.show.title}}</h4>
           <h5>{{slot.show.hosts_list}}</h5>
 
           </div>
+<<<<<<< HEAD
           <div class="row">
             <div class="large-4 large-offset-1 columns times">
               {{slot.start_time}}
@@ -62,6 +100,10 @@
         </div>
       </section>
     </div>
+=======
+      </div>
+    </a>
+>>>>>>> e77f4e1a0a3828b88f4dbd13711cb70c795e1eee
 
   </div>
 	</div>
