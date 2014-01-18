@@ -2,10 +2,10 @@
   <div class="large-12 columns" id="schedule-container">
   	<nav>
       <li ng-repeat='day in days' ng-class='{selected: $parent.selected == day}', ng-click='$parent.selected = day'>
-        {{day | uppercase }}
+        <a href="">{{day | uppercase }}</a>
       </li>
 	  </nav>
-	  <h3>AM</h3>
+    <h3 style="position: relative; top: 15px;">AM</h3>
 	  <hr/>
   		
 
@@ -33,14 +33,15 @@
   		</div>
 		</section>
 
-		</section>
-
 		<h3 style="color: white;">PM</h3>
   	<hr/>
   	<section class="large-3 small-6 columns schedule-square">
 		<div class="large-12 columns">
 				<img src="http://placehold.it/350x350" style="padding-top: 10px;">
 			</div>
+  		<h3 style="color: white; position: relative; top: 15px;">PM</h3>
+	  	<hr/>
+	  	<section class="large-3 small-6 columns schedule-square">
 			<div class="large-12 columns">
 				<h4 class="show-name">SHOW NAME</h4>
 				<h5>Show Hosts</h5>
