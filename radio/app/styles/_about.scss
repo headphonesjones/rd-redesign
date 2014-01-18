@@ -1,0 +1,55 @@
+.panels > p, .panels > h2{
+	color: #FFF;
+}
+.manager-square{
+  height: 305px;
+  background-color: #FFF;
+  border-left: 1px solid #F1F1F1;
+  border-right: 1px solid #f1f1f1;
+  text-align: center;
+  margin-top: 10px;
+  border-bottom: 4px solid #F1F1F1;
+  border-top: 4px solid #F1F1F1;
+  cursor: pointer;
+  transition: border-top .15s ease-in;
+  transition: border-bottom .15s ease-in;
+  transition: background-color .15s ease-in;
+  -webkit-transition: border-top .15s ease-in;  
+  -webkit-transition: border-bottom .15s ease-in;  
+  -webkit-transition: background-color .15s ease-in;  
+  overflow: hidden;
+  h5{
+    color: black;
+  }
+}
+.manager-square:hover{
+  border-top: 4px solid #00CDCD;
+  border-bottom: 4px solid #00CDCD;
+  background-color: #FAFAFA;
+  .times{
+    border-bottom: 2px solid #FAFAFA;
+  }
+}
+dd{
+  text-align: center;
+  vertical-align: middle;
+}
+#contact-info > h5{
+	color: #00CDCD;
+}
+#contact-info > p, #mission-statement > p, #join-box > p, #sponsor-box > p, #awards-box >p, #sponsor-box > h6{
+	color: white;
+}
+#award{
+	background-color: rgba(0,191,255, .2);
+	border-bottom: 4px solid #00CDCD;
+	margin-top: 10px;
+}
+form > label {
+	color: #00CDCD;
+}
+#userform > input, #userform > textarea {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
