@@ -6,6 +6,7 @@
 		position: relative;
 		top: 15px;
 		}
+
 	nav {
 		width: 100%;
 		margin-left: auto;
@@ -47,3 +48,17 @@
 		}
 	}
 }
+.schedule-square:hover{
+  border-top: 4px solid #00CDCD;
+  border-bottom: 4px solid #00CDCD;
+  background-color: #FAFAFA;
+ }
+
+ #PM{
+ color: white;
+ position: relative;
+ top: 15px;
+ }
+  .times-fix{	
+			padding: 7px;
+		}

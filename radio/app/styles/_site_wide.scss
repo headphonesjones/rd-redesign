@@ -34,12 +34,30 @@ article{
 	border-bottom: 4px solid #00CDCD;
 	height: 120px;
 	text-align: center;
+	margin-right: 10px;
 }
 .on-air-up-next:hover{
 	background-color: rgba(0,0,0, .8);
 	border-bottom: 4px solid #008B8B;
 }
-#on-air{
+#play-icon{
+	color: #FAFAFA;
+	transition: color .15s ease-in;
+	-webkit-transition: color .15s ease-in; 
+	font-size: 45px;
 	position: relative;
-	left: 50px;
+	bottom: 7px;
+	cursor: pointer;
+	&:hover{
+	color: #00CDCD;
+	}
+}
+#volume{
+	color: white;
+	transition: color .15s ease-in;
+	-webkit-transition: color .15s ease-in; 
+	&:hover{
+		cursor: pointer;
+		color: #cc0000;
+	}
 }
