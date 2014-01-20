@@ -61,3 +61,32 @@ article{
 		color: #cc0000;
 	}
 }
+.banner-links{
+	height: 76px;
+	background-color: rgba(0,0,0, .4);
+	border-bottom: 2px solid #00CDCD;
+	vertical-align: middle;
+	margin-bottom: 5px;
+	transition: background-color .15s ease-in;
+	-webkit-transition: background-color .15s ease-in; 
+	transition: border-bottom .15s ease-in;
+	-webkit-transition: border-bottom .15s ease-in; 
+	h4{
+		color: #00CDCD;
+		transition: color .15s ease-in;
+		-webkit-transition: color .15s ease-in; 
+	}
+	&:hover{
+		background-color: rgba(0,0,0, .8);
+		border-bottom: 4px solid #008B8B;
+		color: #FAFAFA;
+		cursor:pointer;
+
+		h4{
+			color: #FAFAFA;
+		}
+
+
+	}
+
+}
