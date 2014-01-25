@@ -1,4 +1,33 @@
+@media screen and (max-width: 1024px) {
+	.on-air-up-next{
+	position: absolute;
+	top: 200px;
+	border-right: 2px solid rgba(0,0,0, .8);
+	border-left: 2px solid rgba(0,0,0, .8);
+	}
+	#listen-box{
+
+	}
+	#on-air{
+		margin-left: 33.25%;
+		margin-bottom: 50px;
+	}
+	#up-next{
+		margin-left: 66.5%
+	}
+	nav{
+	margin-bottom: 160px !important;
+	}
+}
+
 @media screen and (max-width: 639px) {
+	.on-air-up-next{
+		top: 70px;
+	}
+
+	body > header{
+		margin-bottom: 140px !important;
+	}
 	nav {	
 		position: fixed;
 		height: 100%;

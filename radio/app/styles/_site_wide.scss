@@ -61,12 +61,15 @@ article{
 		color: #cc0000;
 	}
 }
+#popup-player{
+	margin-top: 4px;
+}
 .banner-links{
 	height: 76px;
 	background-color: rgba(0,0,0, .4);
 	border-bottom: 2px solid #00CDCD;
 	vertical-align: middle;
-	margin-bottom: 5px;
+	margin-bottom: 4px;
 	transition: background-color .15s ease-in;
 	-webkit-transition: background-color .15s ease-in; 
 	transition: border-bottom .15s ease-in;

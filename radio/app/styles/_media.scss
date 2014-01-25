@@ -1,0 +1,13 @@
+#media-video{
+	height: 580px;
+}
+@media screen and (max-width: 640px){
+	#media-video{
+		height: 360px;
+		}
+}
+@media screen and (max-width: 440px){
+	#media-video{
+		height: 260px;
+		}
+}

@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/foundation.min.css">
+    <script language="javascript" type="text/javascript" src="vendor/foundation.tab.js"></script>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
@@ -32,20 +33,20 @@
           <div class="large-3 columns">
             <img src="images/logo.png" id="logo" alt="Radio Depaul Logo" /></span>    
           </div>
-            <div class="large-2 small-6 large-offset-2 columns on-air-up-next show-for-large-only" id="listen-box">
+            <div class="large-2 small-4 large-offset-2 columns on-air-up-next" id="listen-box">
               <h3 class="blue-text">Listen</h3>
               <i class="fa fa-play-circle fa-3" id="play-icon"></i><br/>
               <i class="fa fa-volume-up" id="volume"></i>
             </div>
-            <div class="large-2 small-6 columns on-air-up-next" id="on-air">
+            <div class="large-2 small-4 columns on-air-up-next" id="on-air">
               <h3 class="blue-text">On Air</h3>
               <h5>Show Name</h3>
-              <h5>Hosts</h5>
+              <h5 class="show-for-medium-up">Hosts</h5>
             </div>
-            <div class="large-2 small-6 columns on-air-up-next show-for-large-only">
+            <div class="large-2 small-4 columns on-air-up-next" id="up-next">
               <h3 class="blue-text">Up Next</h3>
               <h5>Show Name</h3>
-              <h5>Hosts</h5>
+              <h5 class="show-for-medium-up">Hosts</h5>
             </div>
             <img ng-click="showNav = !showNav" src="images/menu-icon-w.png" id="menu-icon"/>
         </div>
@@ -103,6 +104,7 @@
         </div>
       </div>
     </footer>
+    <!--
     <div id="player">
       <div class="small-3 columns">
         <img src="http://placehold.it/50x50" style="margin-top: 5px;"/>
@@ -114,7 +116,7 @@
 
       </div>
     </div>
-
+    -->
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
