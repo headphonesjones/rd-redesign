@@ -3,7 +3,7 @@ angular.module('radioApp')
 .directive('pagination', function() {
         return {
                 template: '<div class="row">' +
-                          '<div class="small-11 small-centered large-4 large-centered columns" style="position: relative; top: 10px;">' +
+                          '<div class="small-11 small-centered large-centered large-6 columns" style="position: relative; top: 10px;">' +
                           '<ul class="pagination" ng-hide="numPages() < 2">' + 
                           '<li class="arrow" ng-class="{unavailable: currentPage == 0}" ng-click="prevPage()"><a href="">&laquo;</a></li>' +
                               '<li ng-repeat="page in pages" ng-class="{active: currentPage+1 == page}"" ng-click="gotoPage(page)"><a href="">{{page}}</a></li>' +
