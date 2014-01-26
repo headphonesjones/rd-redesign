@@ -12,22 +12,18 @@
         <br/><br/><br/>
         <section id="podcasts">
           <h3 class="blue-text">Podcasts</h3>
-          <h5 class="blue-text podcast-date">10/18/13</h5>
-          <audio controls>
-            <source src="horse.ogg" type="audio/ogg">
-            <source src="horse.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
+          <div ng-repeat="podcast in show.podcasts">
+            <h5 class="blue-text podcast-date">{{podcast.created_at}}</h5>
+            <audio controls>
+              <source ng-src="{{podcast.file}}" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
         </section>
     </div>
     <div class="large-8 columns small-6 show-about">
       <h3 class="blue-text">Genres</h3>
-       <span class="success label">Pop</span>
-       <span class="success label">Punk</span>
-       <span class="success label">Rock</span>
-       <span class="success label">Indie</span>
-       <span class="success label">Power Pop</span>
-       <span class="success label">J-Pop</span><br/><br/>
+       <span ng-repeat="genre in show.genres_list" class="success label">{{genre.name}}</span>
       <h3 class="blue-text">Description</h3>
       <p>{{show.long_description}}</p>
       <h3 class="blue-text">Hosts</h3>
