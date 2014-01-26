@@ -1,0 +1,13 @@
+<article ng-repeat="story in news">
+  <div class="small-12 columns news-container">
+    <div class="small-12 medium-4 columns">
+      <img ng-src="{{story.image_url}}" width="300" height="200" />
+    </div>
+    <div class="small-12 medium-8 columns">
+      <header>
+        <h3 class="blue-text"><b>{{story.headline}}</b></h3>
+      </header>
+      <p>{{story.snippet}}...<a href="#/news/{{story.id}}"> READ MORE</a></p>
+    </div>
+  </div>
+</article>
