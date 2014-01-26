@@ -39,8 +39,10 @@
 					  color: white;
 					  background-color: #00CDCD;
 					}
-					.active{
-					  color: #00CDCD;
+				}
+				.active{
+					a{
+						color: #00CDCD;
 					}
 				}
 			}
@@ -62,12 +64,11 @@
  #show-host-schedule{
  color: black;
  }
+ }
  .show-avatar{
- 	padding-top: 10px;
- 	height: 181px !important;
- 	width: 181px !important;	
+ 	padding-top: 10px;	
  }
- }
+ 
   .times-fix{	
 			padding: 7px;
 		}
