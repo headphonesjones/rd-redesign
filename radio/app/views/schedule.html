@@ -7,7 +7,7 @@
         </li>
       </ul>
 	  </nav>
-    <h3>AM</h3>
+    <h3>AM {{selected}}</h3>
 	  <hr/>
   		
   		<a a ng-href="#/shows/{{slot.show.id}}" class="large-3 small-6 columns schedule-square" ng-repeat='slot in filteredShows = (schedule | filter: {weekdays:selected}) | filter: {start_time:"AM"}'>
@@ -15,7 +15,7 @@
     			<img ng-src="{{slot.show.avatar_medium}}" style="padding-top: 10px;">
     		</div>
     		<div class="large-12 columns">
-    			<h4 class="show-name blue-text">{{slot.show.title}}</h4>
+    			<h4 class="show-name blue-text" text-fit>{{slot.show.title}}</h4>
     			<h5>{{slot.show.hosts_list}}</h5>
     			</div>
     			<div class="row">
