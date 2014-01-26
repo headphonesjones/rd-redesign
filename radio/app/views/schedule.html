@@ -12,7 +12,7 @@
   		
   		<a a ng-href="#/shows/{{slot.show.id}}" class="large-3 small-6 columns schedule-square" ng-repeat='slot in filteredShows = (schedule | filter: {weekdays:selected}) | filter: {start_time:"AM"}'>
   			<div class="large-12 columns">
-    			<img ng-src="{{slot.show.avatar_medium}}" class="show-avatar">
+    			<img ng-src="{{slot.show.avatar_medium}}" width="181px" height="181px" class="show-avatar">
     		</div>
     		<div class="large-12 columns">
     			<h4 class="show-name blue-text" text-fit>{{slot.show.title}}</h4>
@@ -42,7 +42,7 @@
     <div class="large-12 columns">
       <a a ng-href="#/shows/{{slot.show.id}}" class="large-3 small-6 columns schedule-square" ng-repeat='slot in filteredShows = (schedule | filter: {weekdays:selected}) | filter: {start_time:"PM"}'>
 			<div class="large-12 columns">
-  			<img ng-src="{{slot.show.avatar_medium}}" class="show-avatar">
+  			<img ng-src="{{slot.show.avatar_medium}}" width="181px" height="181px" class="show-avatar">
   		</div>
   		<div class="large-12 columns">
   			<h4 class="show-name blue-text" text-fit>{{slot.show.title}}</h4>
