@@ -7,7 +7,7 @@
         </li>
       </ul>
 	  </nav>
-    <h3>AM {{selected}}</h3>
+    <h3>AM</h3>
 	  <hr/>
   		
   		<a a ng-href="#/shows/{{slot.show.id}}" class="large-3 small-6 columns schedule-square" ng-repeat='slot in filteredShows = (schedule | filter: {weekdays:selected}) | filter: {start_time:"AM"}'>
