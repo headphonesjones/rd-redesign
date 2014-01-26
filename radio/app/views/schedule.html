@@ -2,7 +2,7 @@
   <div class="large-12 columns" id="schedule-container">
   	<nav>
       <ul>
-        <li ng-repeat='day in days' ng-class='{selected: $parent.selected == day}', ng-click='$parent.selected = day'>
+        <li ng-repeat='day in days' ng-class='{active: $parent.selected == day}', ng-click='$parent.selected = day'>
           <a href="">{{day | uppercase }}</a>
         </li>
       </ul>
