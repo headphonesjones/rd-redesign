@@ -92,10 +92,12 @@
 					  color: white;
 					  background-color: #00CDCD;
 					}
-					.active{
- 					  color: #00CDCD;
-					}
 				}
+				&.active{
+						a{
+ 					  		color: #00CDCD;
+ 					  	}
+					}
 			}
 		}
 	}
