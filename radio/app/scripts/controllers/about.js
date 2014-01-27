@@ -1,0 +1,11 @@
+/*
+controllers.controller('AboutController', ['$scope', 'Managers', 'Awards', '$routeParams', 'Page', function($scope, Managers, Awards, $routeParams, Page){
+        Page.setTitle('About');
+        function AboutController($scope) {
+          $scope.items = ['Managers', 'Contact', 'Mission Statement', "Join Radio DePaul", "Sponsor", "Awards"];
+          $scope.selection = $scope.items[0];
+        }
+        Managers.query(function(data){$scope.managers = data;});
+        Awards.query(function(data){$scope.awards = data;}); //401 error from the server
+}]);
+*/

@@ -8,10 +8,10 @@ angular.module('radioApp')
 
 	$scope.$watch($scope.getWidth, function(newValue, oldValue) {
 		$scope.width = newValue;
-	})
+	});
 	window.onresize = function() {
 		$scope.$apply();
-	}
+	};
 
 	//$scope.width = document.body.offsetWidth;  
     $scope.showNav = false;

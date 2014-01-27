@@ -33,6 +33,13 @@ angular.module('radioApp', [
       .when('/apply', {
         templateUrl: 'views/apply.html',
       })
+      .when('/webcam', {
+        templateUrl: 'views/webcam.html',
+        controller: 'WebcamController'
+      })
+      .when('/popupplayer', {
+        templateUrl: 'views/popupplayer.html',
+      })
       .otherwise({
         redirectTo: '/'
       });
