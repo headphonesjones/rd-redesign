@@ -13,7 +13,7 @@ angular.module('radioApp')
       });
     } 
   }
-});
+})
 
 .factory('Awards', function($http, $routeParams){
   return {  
