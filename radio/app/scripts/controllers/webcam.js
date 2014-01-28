@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('radioApp')
-
+/*
 .controller('WebcamController', ['$scope', function($scope){
     
         loadJS('http://jwpsrv.com/library/GgcroA5wEeOwaBIxOUCPzg.js', function() { 
@@ -24,3 +24,4 @@ angular.module('radioApp')
             });
     });
 });
+*/
