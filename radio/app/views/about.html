@@ -5,40 +5,22 @@
 	    <hr/>
       <div class="animate-switch-container" ng-switch on="selection">
           <div class="animate-switch" ng-switch-when="Managers">
-          	<div class="large-12 columns">
+          	<a href="/#/people/{{manager.id}}">
+	          	<div class="large-12 columns">
 	          		<h2>Managers</h2>
-				    <section class="large-4 small-6 columns manager-square">
+				    <section class="large-4 small-6 columns manager-square" ng-repeat='manager in managers'>
 			  			<div class="large-12 columns">
 			    			<img src="http://placehold.it/350x350" style="padding-top: 10px;">
 			    		</div>
 			    			<div class="large-12 columns">
-			    				<h5>Manager Name</h5>
-			    				<h5>Title</h5>
-			    				<h5>Email:</h5>
+			    				<h5>{{manager.name}}</h5>
+			    				<h5>{{manager.position}}</h5>
+			    				<h5><a href="mailto:{{manager.office_email}}">Email: {{manager.office_email}}</a></h5>
 							</div>
 					</section>
-					<section class="large-4 small-6 columns manager-square">
-		  			<div class="large-12 columns">
-		    			<img src="http://placehold.it/350x350" style="padding-top: 10px;">
-		    		</div>
-		    			<div class="large-12 columns">
-		    				<h5>Manager Name</h5>
-		    				<h5>Title</h5>
-		    				<h5>Email:</h5>
-						</div>
-				</section>	
-				<section class="large-4 small-6 columns manager-square">
-		  			<div class="large-12 columns">
-		    			<img src="http://placehold.it/350x350" style="padding-top: 10px;">
-		    		</div>
-		    			<div class="large-12 columns">
-		    				<h5>Manager Name</h5>
-		    				<h5>Title</h5>
-		    				<h5>Email:</h5>
-						</div>
-				</section>
+		        </div>
 	          </div>
-          </div>
+	        </a>
           <div class="animate-switch" ng-switch-when="Contact">
           	<div class="large-12 columns">
 				    <h2>CONTACT</h2>

@@ -2,7 +2,7 @@
 
 angular.module('radioApp')
 
-controllers.controller('WebcamController', ['$scope', function($scope){
+.controller('WebcamController', ['$scope', function($scope){
     
         loadJS('http://jwpsrv.com/library/GgcroA5wEeOwaBIxOUCPzg.js', function() { 
                 jwplayer('webcam-player').setup({

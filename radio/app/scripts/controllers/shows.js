@@ -19,7 +19,6 @@ angular.module('radioApp')
 	    console.log(data);
 	});
 });
-
 function AboutController($scope) {
   $scope.items = ['Managers', 'Contact', 'Mission Statement', "Join Radio DePaul", "Sponsor", "Awards"];
   $scope.selection = $scope.items[0];

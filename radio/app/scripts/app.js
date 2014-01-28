@@ -14,6 +14,7 @@ angular.module('radioApp', [
       })
       .when('/about', {
         templateUrl: 'views/about.html',
+        controller: 'AboutController'
       })
       .when('/schedule', {
         templateUrl: 'views/schedule.html',
@@ -29,6 +30,7 @@ angular.module('radioApp', [
       })
       .when('/media', {
         templateUrl: 'views/media.html',
+        controller: 'MediaController'
       })
       .when('/apply', {
         templateUrl: 'views/apply.html',

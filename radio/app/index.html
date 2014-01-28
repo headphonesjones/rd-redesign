@@ -34,7 +34,9 @@
           </div>
             <div class="large-2 small-4 large-offset-2 columns on-air-up-next" id="listen-box">
               <h3 class="blue-text">Listen</h3>
-              <i class="fa fa-play-circle fa-3" id="play-icon"></i><br/>
+              <i class="fa fa-play-circle fa-3" id="play-icon"></i>
+              <i class="fa fa-pause fa-3" id="pause-icon"></i>
+              <br/>
               <i class="fa fa-volume-up" id="volume"></i>
             </div>
             <div class="large-2 small-4 columns on-air-up-next" id="on-air">
@@ -141,7 +143,6 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <!-- endbower -->
-    <script src="http://p.jwpcdn.com/6/7/jwpsrv.js"></script>
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -150,12 +151,16 @@
         <script src="scripts/controllers/nav.js"></script>
         <script src="scripts/controllers/shows.js"></script>
         <script src="scripts/controllers/schedule.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/webcam.js"></script>
+        <script src="scripts/controllers/media.js"></script>
 
         <script src="scripts/services/shows.js"></script>
         <script src="scripts/services/sponsors.js"></script>
         <script src="scripts/services/news.js"></script>
         <script src="scripts/services/events.js"></script>
         <script src="scripts/services/schedule.js"></script>
+        <script src="scripts/services/managers.js"></script>
 
         <script src="scripts/directives/textfit.js"></script>
         <script src="scripts/directives/pagination.js"></script>

@@ -49,13 +49,29 @@ article{
 	bottom: 7px;
 	cursor: pointer;
 	&:hover{
-	color: #00CDCD;
+		color: #00CDCD;
+	}
+}
+#pause-icon{
+	color: #FAFAFA;
+	transition: color .15s ease-in;
+	-webkit-transition: color .15s ease-in; 
+	font-size: 32px;
+	position: relative;
+	bottom: 0px;
+	cursor: pointer;
+	display: none;
+	&:hover{
+		color: #cc0000;
 	}
 }
 #volume{
 	color: white;
 	transition: color .15s ease-in;
 	-webkit-transition: color .15s ease-in; 
+	position: absolute;
+	bottom: 5px;
+	right: 46%;
 	&:hover{
 		cursor: pointer;
 		color: #cc0000;
