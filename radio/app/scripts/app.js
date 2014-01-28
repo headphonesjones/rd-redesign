@@ -28,6 +28,14 @@ angular.module('radioApp', [
         templateUrl: 'views/show.html',
         controller: 'ShowController'
       })
+      .when('/people/', {
+        templateUrl: 'people.html',
+        controller: 'StaffListController'
+      })
+      .when('/person/:id', {
+        templateUrl: 'views/person.html',
+        controller: 'PersonController'
+      })
       .when('/media', {
         templateUrl: 'views/media.html',
         controller: 'MediaController'

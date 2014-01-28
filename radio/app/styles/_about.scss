@@ -2,7 +2,7 @@
 	color: #FFF;
 }
 .manager-square{
-  height: 305px;
+  height: 460px;
   background-color: #FFF;
   border-left: 1px solid #F1F1F1;
   border-right: 1px solid #f1f1f1;
@@ -19,6 +19,12 @@
   -webkit-transition: background-color .15s ease-in;  
   overflow: hidden;
   h5{
+    color: black;
+  }
+  h4{
+    color: black;
+  }
+  h6{
     color: black;
   }
 }

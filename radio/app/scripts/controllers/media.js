@@ -1,5 +1,4 @@
 'use strict';
-var apiUrl = 'http://radiodepaul.herokuapp.com/api/v2/';
 
 angular.module('radioApp')
 

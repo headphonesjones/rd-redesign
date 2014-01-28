@@ -1,0 +1,26 @@
+<div class="row" style="margin-top: 50px; background-color: rgba(0,0,0, .6); padding-bottom: 20px; padding-top: 10px;">
+  		<div class="large-12 columns" id="shows-container">
+        <div class="large-12 columns">
+          <div class="large-1 columns">
+  			   <h4 style="color: white; margin-top: 10px;">STAFF</h4>
+          </div>
+          <div class="large-5 columns">
+            <input type="text" placeholder="Search for a Staff Member" style="margin-top: 12px;" ng-model='staffSearchText' />
+          </div>
+        </div>
+			
+  			<a ng-href="#/people/{{person.id}}" class="large-3 medium-4 small-6 columns show-square" ng-repeat='person in filteredItems = (people | filter:personSearchFilter) | startFrom:currentPage*pageSize | limitTo:pageSize'>
+  				<div class="large-12 columns">
+  	  				<img ng-src="{{person.avatar_medium}}" style="padding-top: 10px;" width="350" height="350">
+  	  			</div>
+  	  			<div class="large-12 columns">
+  	  				<h4 class="show-name blue-text" text-fit>{{person.name}}</h4>
+  	  				<h5 class="show-hosts" text-fit>{{person.shows}}</h5>
+  	  			</div>
+  	  		</div>
+  			</a>
+
+  		</div>
+      <pagination page-size='8' count='filteredItems.length'></pagination>
+     </div>
+</div>
