@@ -8,12 +8,12 @@
       </div>
     </div>
       <div class="large-12 columns">
-        <a ng-href="#/people/{{person.id}}" ng-repeat='person in filteredItems = (people | filter:staffSearchFilter) | startFrom:currentPage*pageSize | limitTo:pageSize'>
+        <a ng-href="#/people/{{person.id}}" ng-repeat='people in filteredItems = (people | filter:staffSearchFilter) | startFrom:currentPage*pageSize | limitTo:pageSize'>
         <div class="large-3 medium-4 small-6 columns person-square">
-            <img ng-src="{{people.avatar_thumb}}" class="show-avatar" width="350" height="350">
+            <img ng-src="{{people.avatar_medium}}" class="show-avatar" width="350" height="350">
           <div class="large-12 columns">
-            <h4 class="blue-text">{{people.name}}</h4>
-            <h5 class="show-hosts">{{people.shows}}</h5>
+            <h4 class="blue-text" text-fit>{{people.name}}</h4>
+            <h5 class="show-hosts" text-fit>{{people.shows}}</h5>
           </div>
         </div>
         </a>
