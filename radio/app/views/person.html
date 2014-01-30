@@ -26,8 +26,7 @@
       <h3 class="blue-text">Class Year</h3>
         <p>{{person.class_year}}</p>
       <h3 class="blue-text">Hosted Show(s)</h3>
-      <a ng-href="#/shows/{{show.id}}" class="button">{{person.shows.title}}</a>
-
+      <a ng-repeat="show in person.shows" ng-href="#/shows/{{show.id}}" class="button">{{show.title}}</a>
     </div>
   </div>
 </div>
