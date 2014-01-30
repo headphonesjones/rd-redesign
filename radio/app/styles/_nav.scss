@@ -1,4 +1,8 @@
-@media screen and (max-width: 1024px) {
+	.on-air-show-name{
+		height: 55px;
+		overflow-y: scroll;
+	}
+	@media screen and (max-width: 1024px) {
 	.on-air-up-next{
 	position: absolute;
 	top: 200px;
@@ -15,8 +19,9 @@
 	#up-next{
 		margin-left: 66.5%
 	}
+
 	nav{
-	margin-bottom: 160px !important;
+		margin-bottom: 160px !important;
 	}
 }
 

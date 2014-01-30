@@ -28,7 +28,7 @@
     <!-- Add your site or application content here -->
     <header>
       <div id="top-bar" class="row">
-        <div class="large-12 columns">
+        <div class="large-12 columns" ng-controller='OnAirController')>
           <div class="large-3 columns">
             <img src="images/logo.png" id="logo" alt="Radio Depaul Logo" /></span>    
           </div>
@@ -41,13 +41,11 @@
             </div>
             <div class="large-2 small-4 columns on-air-up-next" id="on-air">
               <h3 class="blue-text">On Air</h3>
-              <h5>Show Name</h3>
-              <h5 class="show-for-medium-up">Hosts</h5>
+              <h5 class="on-air-show-name" >{{slot.show.title}}</h3>
             </div>
             <div class="large-2 small-4 columns on-air-up-next" id="up-next">
               <h3 class="blue-text">Up Next</h3>
-              <h5>Show Name</h3>
-              <h5 class="show-for-medium-up">Hosts</h5>
+              <h5 class="on-air-show-name" text-fit>{{next_slot.show.title}} asdds asddssd  asdsadsa dsadsdas asdsdasdsa</h3>
             </div>
             <img ng-click="showNav = !showNav" src="images/menu-icon-w.png" id="menu-icon"/>
         </div>
@@ -156,6 +154,7 @@
         <script src="scripts/controllers/webcam.js"></script>
         <script src="scripts/controllers/media.js"></script>
         <script src="scripts/controllers/people.js"></script>
+        <script src="scripts/controllers/onair.js"></script>
 
         <script src="scripts/services/shows.js"></script>
         <script src="scripts/services/sponsors.js"></script>
