@@ -11,7 +11,6 @@ angular.module('radioApp')
     };
     People.query(function(data){
             $scope.people = data;
-            console.log($scope.people);
             $scope.numberOfPages=function(){
             return Math.ceil($scope.staff.length/$scope.pageSize);                
         }
@@ -25,5 +24,5 @@ angular.module('radioApp')
 })
 
 .controller('PersonController', function($scope, People){
-    People.get(function(data) { $scope.person = data; console.log(data)});
+    People.get(function(data) { $scope.person = data;});
 });
