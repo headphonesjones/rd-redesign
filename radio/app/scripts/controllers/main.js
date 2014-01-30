@@ -12,6 +12,5 @@ angular.module('radioApp')
 
 	Events.query(function(data){
 	    $scope.events = data;
-	    console.log(data);
 	});
   });

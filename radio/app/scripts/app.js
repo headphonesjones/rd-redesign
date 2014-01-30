@@ -1,3 +1,4 @@
+
 'use strict';
 
 angular.module('radioApp', [
@@ -60,4 +61,21 @@ angular.module('radioApp').config(function($sceDelegateProvider) {
     'self',
     // Allow loading from our assets domain.  Notice the difference between * and **.
     'https://radiodepaul.s3.amazonaws.com/**']);
+
+
 });
+
+
+function loadJS(src, callback) {
+    var s = document.createElement('script');
+    s.src = src;
+    s.async = true;
+    s.onreadystatechange = s.onload = function() {
+        var state = s.readyState;
+        if (!callback.done && (!state || /loaded|complete/.test(state))) {
+            callback.done = true;
+            callback();
+        }
+    };
+    document.getElementsByTagName('head')[0].appendChild(s);
+}
