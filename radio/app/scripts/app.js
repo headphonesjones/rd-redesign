@@ -33,7 +33,7 @@ angular.module('radioApp', [
         templateUrl: 'views/people.html',
         controller: 'PeopleListController'
       })
-      .when('/person/:id', {
+      .when('/people/:id', {
         templateUrl: 'views/person.html',
         controller: 'PersonController'
       })

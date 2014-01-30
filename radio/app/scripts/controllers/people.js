@@ -24,6 +24,6 @@ angular.module('radioApp')
     };
 })
 
-.controller('PersonController', function($scope, Person){
-    Person.query(function(data) { $scope.person = data;});
+.controller('PersonController', function($scope, People){
+    People.get(function(data) { $scope.person = data; console.log(data)});
 });
