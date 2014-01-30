@@ -41,11 +41,15 @@
             </div>
             <div class="large-2 small-4 columns on-air-up-next" id="on-air">
               <h3 class="blue-text">On Air</h3>
-              <h5 class="on-air-show-name" >{{slot.show.title}}</h3>
+              <a ng-href="#/shows/{{slot.show.id}}">
+                <h5 class="on-air-show-name" >{{slot.show.title}}</h3>
+              </a>
             </div>
             <div class="large-2 small-4 columns on-air-up-next" id="up-next">
               <h3 class="blue-text">Up Next</h3>
-              <h5 class="on-air-show-name" text-fit>{{next_slot.show.title}} asdds asddssd  asdsadsa dsadsdas asdsdasdsa</h3>
+              <a ng-href="#/shows/{{next_slot.show.id}}">
+                <h5 class="on-air-show-name" text-fit>{{next_slot.show.title}} asdds asddssd  asdsadsa dsadsdas asdsdasdsa</h3>
+              </a>
             </div>
             <img ng-click="showNav = !showNav" src="images/menu-icon-w.png" id="menu-icon"/>
         </div>
