@@ -3,7 +3,6 @@ var apiUrl = 'http://radiodepaul.herokuapp.com/api/v2/';
 
 angular.module('radioApp')
 .factory('Shows', function($http, $routeParams){
-
   return {
     get: function(callback) {
       $http.jsonp(apiUrl + 'shows/' + $routeParams['showId'] +'/?callback=JSON_CALLBACK').

@@ -1,0 +1,25 @@
+.person-square{
+  height: 305px;
+  background-color: #FFF;
+  border-left: 1px solid #F1F1F1;
+  border-right: 1px solid #f1f1f1;
+  text-align: center;
+  margin-top: 10px;
+  border-bottom: 4px solid #F1F1F1;
+  border-top: 4px solid #F1F1F1;
+  cursor: pointer;
+  transition: background-color .15s ease-in;
+  transition: border-top .15s ease-in;
+  transition: border-bottom .15s ease-in;
+  -webkit-transition: background-color.15s ease-in;  
+  -webkit-transition: border-top .15s ease-in;  
+  -webkit-transition: border-bottom .15s ease-in;  
+  h5{
+    color: black;
+  }
+}
+.person-square:hover{
+  border-bottom: 4px solid #00CDCD;
+  border-top: 4px solid #00CDCD;
+  background-color: #FAFAFA;
+}

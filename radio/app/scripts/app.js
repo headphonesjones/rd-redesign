@@ -29,19 +29,19 @@ angular.module('radioApp', [
         controller: 'ShowController'
       })
       .when('/people/', {
-        templateUrl: 'people.html',
-        controller: 'StaffListController'
+        templateUrl: 'views/people.html',
+        controller: 'PeopleListController'
       })
       .when('/person/:id', {
         templateUrl: 'views/person.html',
         controller: 'PersonController'
       })
+      .when('/news/:id', {
+        templateUrl: 'views/news.html',
+      })
       .when('/media', {
         templateUrl: 'views/media.html',
         controller: 'MediaController'
-      })
-      .when('/apply', {
-        templateUrl: 'views/apply.html',
       })
       .when('/webcam', {
         templateUrl: 'views/webcam.html',

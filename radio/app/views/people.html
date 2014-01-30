@@ -8,19 +8,29 @@
             <input type="text" placeholder="Search for a Staff Member" style="margin-top: 12px;" ng-model='staffSearchText' />
           </div>
         </div>
+          <div class="large-12 columns">
+            <div class="large-3 medium-4 small-6 columns person-square">
+                <img src="http://placehold.it/350x350" class="show-avatar" width="350" height="350">
+              <div class="large-12 columns">
+                <h4 class="blue-text">Person Name</h4>
+                <h5 class="show-hosts">Shows Hosted</h5>
+              </div>
+            </div>
+          </div>
 			
-  			<a ng-href="#/people/{{person.id}}" class="large-3 medium-4 small-6 columns show-square" ng-repeat='person in filteredItems = (people | filter:personSearchFilter) | startFrom:currentPage*pageSize | limitTo:pageSize'>
+  			<a ng-href="#/people/{{person.id}}" ng-repeat='person in filteredItems = (people | filter:staffSearchFilter) | startFrom:currentPage*pageSize | limitTo:pageSize'>
   				<div class="large-12 columns">
-  	  				<img ng-src="{{person.avatar_medium}}" style="padding-top: 10px;" width="350" height="350">
-  	  			</div>
-  	  			<div class="large-12 columns">
-  	  				<h4 class="show-name blue-text" text-fit>{{person.name}}</h4>
-  	  				<h5 class="show-hosts" text-fit>{{person.shows}}</h5>
-  	  			</div>
+            <div class="large-3 medium-4 small-6 columns person-square">
+    	  				<img ng-src="{{people.avatar_thumb}}" class="show-avatar" width="350" height="350">
+    	  			</div>
+    	  			<div class="large-12 columns">
+    	  				<h4 class="blue-text">{{people.name}}</h4>
+    	  				<h5 class="show-hosts">{{people.shows}}</h5>
+    	  			</div>
+            </div>
   	  		</div>
   			</a>
-
+        <pagination page-size='8' count='filteredItems.length'></pagination>
   		</div>
-      <pagination page-size='8' count='filteredItems.length'></pagination>
      </div>
 </div>
