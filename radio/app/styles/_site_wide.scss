@@ -23,6 +23,13 @@ footer{
 		}
 	}
 }
+video{
+	display: none;
+}
+#audio-player-hidden{
+	position: absolute;
+	display: none;
+}
 article{
 	color: white;
 	h6{
@@ -66,15 +73,28 @@ article{
 	}
 }
 #volume{
-	color: white;
+	color: #FAFAFA;
 	transition: color .15s ease-in;
 	-webkit-transition: color .15s ease-in; 
 	position: absolute;
 	bottom: 5px;
-	right: 46.2%;
+	right: 45.8%;
 	&:hover{
 		cursor: pointer;
 		color: #cc0000;
+	}
+}
+#volume-off{
+	color: #cc0000;
+	display: none;
+	transition: color .15s ease-in;
+	-webkit-transition: color .15s ease-in; 
+	position: absolute;
+	bottom: 5px;
+	right: 48%;
+	&:hover{
+		cursor: pointer;
+		color: #00CDCD;
 	}
 }
 #popup-player{
@@ -117,4 +137,11 @@ article{
 	background-color: rgba(0,0,0, .6); 
 	padding-bottom: 20px; 
 	padding-top: 10px;
+}
+#chat{
+	position: fixed;
+	bottom: 0px;
+	right: 20px;
+	background-color: rgba(0,0,0, .6);
+	display: none;
 }

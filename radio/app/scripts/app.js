@@ -79,3 +79,44 @@ function loadJS(src, callback) {
     };
     document.getElementsByTagName('head')[0].appendChild(s);
 }
+
+var myVideo=document.getElementById("audio-player-hidden");
+function playVid()
+  {
+  myVideo.play();
+  volume: 75;
+  document.getElementById("pause-icon").style.display = 'inline-block';
+  document.getElementById("play-icon").style.display = 'none';
+  }
+function pauseVid()
+  {
+  myVideo.pause();
+  document.getElementById("play-icon").style.display = 'inline-block';
+  document.getElementById("pause-icon").style.display = 'none';
+  } 
+
+
+  function mute()
+    {
+    myVideo.pause();
+    document.getElementById("volume-off").style.display = 'inline-block';
+    document.getElementById("volume").style.display = 'none';
+    }
+  function unmute()
+    {
+    myVideo.play();
+    document.getElementById("volume-off").style.display = 'none';
+    document.getElementById("volume").style.display = 'inline-block';
+    } 
+
+    function showChat()
+    {
+    var chatFrame = '<h4 class="blue-text" style="float: right; margin-right: 10px; cursor: pointer;" onClick="closeChat();">X</h4><br/><iframe id="chat-iframe" src="http://cdn.livestream.com/embed/radiodepaulchannel?layout=6&amp;height=350&amp;width=250&amp;showTimestamp=true" height="350px;"></iframe>';
+    document.getElementById("chat").style.display = 'inline-block';
+    document.getElementById("chat").innerHTML=chatFrame;
+    }
+  function closeChat()
+    {
+    document.getElementById("chat").style.display = 'none';
+    } 
+
