@@ -81,6 +81,7 @@ function loadJS(src, callback) {
 }
 
 var myVideo=document.getElementById("audio-player-hidden");
+window.myVideo = myVideo;
 function playVid()
   {
   myVideo.play();
