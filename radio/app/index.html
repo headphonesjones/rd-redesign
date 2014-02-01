@@ -31,6 +31,8 @@
     <!-- Add your site or application content here -->
     <header>
       <div id="top-bar" class="row">
+        <img ng-click="showNav = !showNav" src="images/menu-icon-w.png" id="menu-icon"/>
+
         <div class="large-12 columns" ng-controller='OnAirController')>
           <div class="large-3 columns">
             <img src="/images/logo.png" id="logo" alt="Radio Depaul Logo" /></span>    
@@ -55,11 +57,9 @@
                 <h5 class="on-air-show-name" text-fit>{{next_slot.show.title}}</h3>
               </a>
             </div>
-            <img ng-click="showNav = !showNav" src="images/menu-icon-w.png" id="menu-icon"/>
         </div>
               
       </div>
-      
       <nav ng-show="showNav || width >= 640">
         <ul>
         <li><a href="#/">HOME</a></li>
