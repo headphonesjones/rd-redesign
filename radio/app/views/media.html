@@ -6,10 +6,14 @@
 		<br/>
 		<h3>Galleries</h3>
 		<hr/>
-		<flickr>
-			<photoset ng-repeat="pset in photosets" id="{{pset}}"></photoset>
-			<lightbox></lightbox>
-		</flickr>
+		<lightbox></lightbox>
+		</hr>
+		<div class="row">
+			<flickr>
+				<photoset ng-repeat="pset in photosets" id="{{pset}}"></photoset>
+			</flickr>
+		</div>
+		<!--
 		<div class="row">
 			<div class="large-4 small-6 columns">
 				<h5 class="blue-text media-text">Radio DePaul 2009-2010</h5>
@@ -24,7 +28,6 @@
 				<img class="image-gallery-single-box" src="../images/2011-2012.jpg" width="293" height="210"/>
 			</div>
 		</div>
-		<!-- ROW TWO -->
 		<div class="row">
 			<div class="large-4 small-6 columns">
 				<h5 class="blue-text media-text">"Timeless Vibrations"</h5>
@@ -39,5 +42,6 @@
 				<img class="image-gallery-single-box" src="../images/awards.jpg" width="293" height="210" />
 			</div>
 		</div>
+		-->
 	</div>
 </div>
