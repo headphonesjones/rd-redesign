@@ -33,11 +33,13 @@ flickr.directive('photoset', ['$http', function($http) {
     require: "^flickr",
     replace: true,
     restrict: 'E',
-    template: '<div class="thumbnail">' +
-                '<h3>{{photoset.title._content}}</h3>' +
-                   '<div class="thumbnail-image" ng-click="showPhotoset(photoset);">' +
-                     '<img id="lightbox-image" ng-src="http://farm{{photoset.farm}}.static.flickr.com/{{photoset.server}}/{{photoset.primary}}_{{photoset.secret}}_m.jpg" width="215" />' +
-                   '</div>' +
+    template: '<div class="large-4 small-6 columns">' +
+                  '<h5 class="blue-text media-text">{{photoset.title._content}}</h5>' +
+                  '<div class="thumbnail">' +
+                     '<div class="thumbnail-image" ng-click="showPhotoset(photoset);">' +
+                       '<img id="lightbox-image" width="293" height="210" ng-src="http://farm{{photoset.farm}}.static.flickr.com/{{photoset.server}}/{{photoset.primary}}_{{photoset.secret}}_m.jpg" width="215" />' +
+                     '</div>' +
+                 '</div>' +
                '</div>',
     scope: {
         id: '@'

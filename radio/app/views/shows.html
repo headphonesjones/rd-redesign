@@ -11,7 +11,7 @@
 			
   			<a ng-href="#/shows/{{show.id}}" class="large-3 medium-4 small-6 columns show-square" ng-repeat='show in filteredItems = (shows | filter:showSearchFilter) | startFrom:currentPage*pageSize | limitTo:pageSize'>
   				<div class="large-12 columns">
-  	  				<img ng-src="{{show.avatar_thumb}}" style="padding-top: 10px;" width=350 height=350>
+  	  				<img ng-src="{{show.avatar_thumb}}" class="show-avatar" width=350 height=350>
   	  			</div>
   	  			<div class="large-12 columns">
   	  				<h4 class="show-name blue-text" text-fit>{{show.title}}</h4>

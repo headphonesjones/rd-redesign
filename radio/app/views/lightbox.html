@@ -1,7 +1,7 @@
 <div id="lightbox" ng-show="visible">
   <div id="lightbox-bg" ng-click="visible = false"></div>
   <div id="lightbox-content">
-    <div id="previous-arrow" ng-click="photoIndex = photoIndex - 1" ng-show="photoIndex &gt; 0"></div><img ng-animate="show: 'show'" ng-show="photo == currentPhoto()" ng-repeat="photo in photos" ng-src="http://farm{{photo.farm}}.static.flickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_b.jpg"/>
+    <div id="previous-arrow" ng-click="photoIndex = photoIndex - 1" ng-show="photoIndex &gt; 0"></div><img width="100%" ng-animate="show: 'show'" ng-show="photo == currentPhoto()" ng-repeat="photo in photos" ng-src="http://farm{{photo.farm}}.static.flickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_b.jpg"/>
     <div id="next-arrow" ng-click="photoIndex = photoIndex + 1" ng-show="photoIndex &lt; numberOfPhotos - 1">;</div>
   </div>
 </div>
