@@ -6,6 +6,7 @@ angular.module('radioApp', [
   'ngSanitize',
   'ngRoute',
   'ngAnimate',
+  'flickr',
 ])
   .config(function ($routeProvider) {
     $routeProvider
