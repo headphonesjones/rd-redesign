@@ -82,13 +82,17 @@ function loadJS(src, callback) {
 }
 
 var myVideo=document.getElementById("audio-player-hidden");
-window.myVideo = myVideo;
+var audioSupport = !!(myVideo.canPlayType && myVideo.canPlayType('audio/mpeg;').replace(/no/, ''));
 function playVid()
   {
-  myVideo.play();
-  volume: 75;
-  document.getElementById("pause-icon").style.display = 'inline-block';
-  document.getElementById("play-icon").style.display = 'none';
+    if (audioSupport == false) {
+      window.open('/popupplayer.html')
+    } else {
+      myVideo.play();
+      volume: 75;
+      document.getElementById("pause-icon").style.display = 'inline-block';
+      document.getElementById("play-icon").style.display = 'none';
+    }
   }
 function pauseVid()
   {
