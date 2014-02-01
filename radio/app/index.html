@@ -104,8 +104,11 @@
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
         <audio width="320" height="240" id="audio-player-hidden">
-        <source src="http://rock.radio.depaul.edu:8000/stream.mp3&137714603810" preload="none">
-        <source src="http://rock.radio.depaul.edu:8000/stream/1/" type="audio/mpeg">
+          <source src="http://rock.radio.depaul.edu:8000/stream.mp3">
+          <!--
+          <source src="http://rock.radio.depaul.edu:8000/stream/1/" type="audio/mpeg">
+          <source src="http://rock.radio.depaul.edu:8000/stream.mp3&137714603810" preload="none">
+          -->
         </audio>
       </div>
       <div id="chat">
@@ -169,6 +172,7 @@
         <script src="scripts/controllers/media.js"></script>
         <script src="scripts/controllers/people.js"></script>
         <script src="scripts/controllers/onair.js"></script>
+        <script src="scripts/controllers/news.js"></script>
 
         <script src="scripts/services/shows.js"></script>
         <script src="scripts/services/sponsors.js"></script>

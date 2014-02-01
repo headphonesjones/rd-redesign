@@ -41,8 +41,9 @@ angular.module('radioApp', [
         templateUrl: 'views/person.html',
         controller: 'PersonController'
       })
-      .when('/news/:id', {
+      .when('/news', {
         templateUrl: 'views/news.html',
+        controller: 'NewsListController'
       })
       .when('/media', {
         templateUrl: 'views/media.html',

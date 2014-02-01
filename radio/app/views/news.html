@@ -1,13 +1,18 @@
-<article ng-repeat="story in news">
-  <div class="small-12 columns news-container">
-    <div class="small-12 medium-4 columns">
-      <img ng-src="{{story.image_url}}" width="300" height="300" />
-    </div>
-    <div class="small-12 medium-8 columns">
-      <header>
-        <h3 class="blue-text"><b>{{story.headline}}</b></h3>
-      </header>
-      <p>{{story.content}}</p>
-    </div>
+<div class="row" style="margin-top: 50px; background-color: rgba(0,0,0, .6); padding-bottom: 20px; padding-top: 10px;">
+  <div class="large-12 columns">
+    <h3 class="blue-text">NEWS</h3>
+    <article ng-repeat="story in news">
+      <div class="small-12 columns news-container">
+        <div class="small-12 medium-4 columns">
+          <img ng-src="{{story.image_url}}" width=300 height=200 />
+        </div>
+        <div class="small-12 medium-8 columns">
+          <header>
+            <h5 class="blue-text"><b>{{story.headline}}</b></h5>
+          </header>
+          <p>{{story.content}}</p>
+        </div>
+      </div>
+    </article>
   </div>
-</article>
+</div>
