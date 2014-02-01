@@ -26,6 +26,9 @@ angular.module('radioApp', [
         templateUrl: 'views/shows.html',
         controller: 'ShowListController'
       })
+      .when('/sports', {
+        templateUrl: 'views/sports.html',
+      })
       .when('/shows/:showId', {
         templateUrl: 'views/show.html',
         controller: 'ShowController'
