@@ -1,6 +1,6 @@
     <div class="row home-content">
       <div class="small-12 large-10 columns" id="banner-container">
-        <img src="images/station2.jpg" alt="Radio Depaul Station" />
+        <img src="images/station2.jpg" alt="Radio Depaul Station" alt="Radio DePaul Chicago's College Connection" />
       </div>
       <a  onclick="window.open('/popupplayer.html', 'a', 'width=390, height=120, scrollbars=0, resizable=0')">
         <div class="large-2 columns show-for-large-up banner-links" id="popup-player">
@@ -24,7 +24,7 @@
       <!-- NEWS -->
     <div class="row home-content">
       <div class="small-12 columns">
-          <h4>LATEST <b>NEWS</b></h4>
+          <h1 class="h1-class">LATEST <b>NEWS</b></h1>
       </div>
       
       <article ng-repeat="story in news">
@@ -34,7 +34,7 @@
           </div>
           <div class="small-12 medium-8 columns">
             <header>
-              <h5 class="blue-text"><b>{{story.headline}}</b></h5>
+              <h2 class="blue-text h2-class"><b>{{story.headline}}</b></h2>
             </header>
             <p>{{story.content}}</p>
           </div>
@@ -46,7 +46,7 @@
       <!-- COMING UP -->
       <div class="row home-content">
         <div class="small-12 columns" style="margin-top: 10px;">
-            <h4>COMING <b>UP</b></h4>
+            <h1 class="h1-class">COMING <b>UP</b></h1>
         </div>
         <article ng-repeat="event in events">
           <div class="small-12 columns medium-6 coming-up-container">
@@ -55,7 +55,7 @@
             </div>
             <div class="small-12 columns">
               <header>
-                <h5 class="blue-text"><b>{{event.title}}</b></h5>
+                <h2 class="blue-text h2-class"><b>{{event.title}}</b></h2>
               </header>
               <p>{{event.first_line}}</p>
               <p>{{event.second_line || "&nbsp;"}}</p>

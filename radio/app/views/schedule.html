@@ -1,12 +1,14 @@
 <div class="row" style="margin-top: 50px; background-color: rgba(0,0,0, .6); padding-bottom: 20px;">
-  <div class="large-12 columns" id="schedule-container">
-  	<nav>
-      <ul>
-        <li ng-repeat='day in days' ng-class='{active: $parent.selected == day}' ng-click='$parent.selected = day'>
-          <a href="">{{day | uppercase }}</a>
-        </li>
-      </ul>
-	  </nav>
+    <div class="large-12 columns" id="schedule-container">
+      <div class="row schedule-nav-container">
+      	<nav>
+          <ul>
+            <li ng-repeat='day in days' ng-class='{active: $parent.selected == day} schedule-nav-links' ng-click='$parent.selected = day'>
+              <a href="">{{day | uppercase }}</a>
+            </li>
+          </ul>
+    	  </nav>
+      </div>
     <h3>AM</h3>
 	  <hr/>
   		

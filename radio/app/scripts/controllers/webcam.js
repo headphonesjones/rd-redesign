@@ -12,14 +12,14 @@ angular.module('radioApp')
                 width: '100%',
                 aspectratio: '16:9',
                 playlist: [{
-                        image: "/assets/myPoster.jpg",
+                        image: 'http://i.imgur.com/6O6jzqI.jpg',
                         sources: [{ 
                             file: 'http://ec2-67-202-3-106.compute-1.amazonaws.com/rtplive/mp4:camera.stream/playlist.m3u8',
                                 },{
                             file: 'rtmp://ec2-67-202-3-106.compute-1.amazonaws.com/rtplive/mp4:camera.stream',
                         }]
                     }],
-                    primary: "flash"
+                primary: "html5"
 
             });
     });

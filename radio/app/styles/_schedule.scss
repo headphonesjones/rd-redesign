@@ -73,3 +73,41 @@
   .times-fix{	
 			padding: 7px;
 		}
+@media screen and (max-width: 640px){
+	#schedule-container{
+		.schedule-nav-container{
+			height: 40px;
+		}
+		nav {
+			position: relative;
+			height: 40px;
+			ul {
+
+				li {
+					display: inline;
+					color: #FFF;
+					font-size: .1em;
+					a {
+						color: #fff;
+						display: inline-block;
+						font-size: .1em;
+						padding: 0 10px;
+						height: 38px;
+						line-height: 38px;
+		  				-webkit-transition: background-color .25s ease-in;  
+						&:hover {
+						  color: white;
+						  background-color: #00CDCD;
+						}
+					}
+					&.active{
+						a{
+						color: #00CDCD;
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
