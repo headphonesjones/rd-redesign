@@ -3,7 +3,7 @@
       <div class="row schedule-nav-container">
       	<nav>
           <ul>
-            <li ng-repeat='day in days' ng-class='{active: $parent.selected == day} schedule-nav-links' ng-click='$parent.selected = day'>
+            <li ng-repeat='day in days' ng-class='{active: $parent.selected == day}' ng-click='$parent.selected = day'>
               <a href="">{{day | uppercase }}</a>
             </li>
           </ul>

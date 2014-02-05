@@ -10,6 +10,7 @@ angular.module('radioApp')
                 //image: 'Enter a JPG or PNG preview image URL',
                 title: 'Radio DePaul Webcam',
                 width: '100%',
+                primary: 'html5',
                 aspectratio: '16:9',
                 playlist: [{
                         image: 'http://i.imgur.com/6O6jzqI.jpg',
@@ -19,7 +20,6 @@ angular.module('radioApp')
                             file: 'rtmp://ec2-67-202-3-106.compute-1.amazonaws.com/rtplive/mp4:camera.stream',
                         }]
                     }],
-                primary: "html5"
 
             });
     });
