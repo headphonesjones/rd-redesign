@@ -10,26 +10,24 @@
 			<h3>Radio DePaul <b>Sports</b></h3>
 			<div class="crop">
 				<img alt="DePaul Mens Basketball" src="images/mens-soccer.png" id="sports-home-image"/>
+				<div id="webcam-player" style="display: none;"></div>
 			</div>
-			<audio id="sports-player" controls style="display: none;">
-		      <source src="http://rock.radio.depaul.edu:8002/stream.mp3" />
-		    </audio>
 		</div>
 		<div class="large-2 small-4 columns" id="sports-listen-box">
-			<h3 class="blue-text">Sports Stream</h3>
-			<i class="fa fa-play-circle fa-3" id="sports-play-icon" onClick="playSports();"></i>
-			<i class="fa fa-pause fa-3" id="sports-pause-icon" onClick="pauseSports();"></i>
-			<br/>
-	      <i class="fa fa-volume-up" onClick="sportsMute();" id="sports-volume"></i>
-	      <i class="fa fa-volume-off" onClick="sportsUnmute();" id="sports-volume-off"></i>
+			<h3 class="blue-text text-center" id="sports-stream-text">Sports Stream</h3>
+			<audio id="sports-player" controls>
+		      <source src="http://rock.radio.depaul.edu:8002/stream.mp3" />
+		    </audio>
 	    </div>
 	    <div class="large-2 small-4 columns">
 			<h3 class="blue-text text-center">Links</h3>
-			<a href="http://rock.radio.depaul.edu:8002/listen.pls?sid=1"><input type="button" class="button small margin-left" value="Streamfile"/> </a>
-			<a href="#"><input type="button" class="button small margin-left" value="Something"/> </a>
+			<a href="http://rock.radio.depaul.edu:8002/listen.pls?sid=2"><input type="button" class="button small margin-left" value="Streamfile"/> </a>
+			<input type="button" class="button small margin-left" value="Webcam" onClick="sportsWebcam();"/>
+			<input type="button" class="button small margin-left" value="Live Chat" onClick="showChat();">
 	    </div>
 	</div>
 </div>
+<!-- Podcasts coming soon
 <div class="row" style="margin-top: 50px; background-color: rgba(0,0,0, .6); padding-bottom: 20px; padding-top: 10px;">
 	<div class="large-12 colimns">
 		<h3 class="margin-left blue-text">Featured Podcasts</h3>
@@ -74,96 +72,6 @@
 			<a href="#"><input type="button" class="button small" value="Host Name"/> </a>
 			<a href="#"><input type="button" class="button small" value="Host Name"/> </a>
 		</div>
-	</div>
-</div>
-
-<!--
-<div class="row" style="margin-top: 50px; background-color: rgba(0,0,0, .6); padding-bottom: 20px; padding-top: 10px;">
-	<h3 class="blue-text">Official Sports Page Coming Soon</h3>
-		<h4>Click play below to listen to our sports stream.</h4>
-
-		<audio controls>
-          <source src="http://rock.radio.depaul.edu:8002/stream.mp3" />
-        </audio><br/>
-	<div class="large-12 columns" id="sports-container" ng-controller="SportsController">
-		<select ng-model="selection" class="button dropdown" ng-options="item for item in items">
-	    </select>
-	    <hr/>
-      <div class="animate-switch-container" ng-switch on="selection">
-          <div class="animate-switch" ng-switch-when="Home">
-          	<a href="/#/people/{{manager.id}}">
-	          	<div class="large-12 columns">
-	          		<h2>Managers</h2>
-				    <section class="large-4 small-6 columns manager-square" ng-repeat='manager in managers'>
-			  			<div class="large-12 columns">
-			    			<img ng-src='{{manager.avatar_medium}}' width="251" height="251" class="show-avatar">
-			    		</div>
-			    			<div class="large-12 columns">
-			    				<h4>{{manager.name}}</h4>
-			    				<h6>{{manager.position}}</h6>
-			    				<h6><a href="mailto:{{manager.office_email}}">Email: {{manager.office_email}}</a></h6>
-							</div>
-					</section>
-		        </div>
-	          </div>
-	        </a>
-          <div class="animate-switch" ng-switch-when="Play-by-Play">
-          	<div class="large-12 columns">
-				    <h2>CONTACT</h2>
-				    <div class="large-4  small-12 columns" id="contact-info">
-				    	<h5>Station Phone:</h5>
-				    	<p>(773) 325-7308</p>
-				    	<h5>Station Fax:</h5>
-				    	<p>(773) 325-4133</p>
-				    	<h5>Station Mailing Address:</h5>
-				    	<p>Radio DePaul<br/>
-				    	2250 N. Sheffield Avenue, Suite 317<br/>
-				    	Chicago, IL 60614</p>
-				    </div>
-				    <div class="large-8  small-12 columns">
-				    	<form action="mailto:radiodepaulpd@gmail.com?Subject=Website_Contact_Form" id="userform" method="POST">
-				    		<label>Your Name</label>
-				    		<input type="text" form="userform" placeholder="First and Last Name" />
-				    		<label>Your Email</label>
-				    		<input type="text" form="userform" placeholder="example@depaul.edu" />
-				    		<label>Subject</label>
-				    		<input type="text" form="userform" placeholder="example@depaul.edu" />
-				    		<label>Content</label>
-				    		<textarea name="comtent" form="userform" type="textarea" style="height: 150px;"></textarea>
-				    		<input type="submit" class="button" value="Send">
-				    	</form>
-				    </div>
-			    </div>
-          </div>
-          <div class="animate-switch" ng-switch-when="Blue Demon Weekly">
-          	<div class="large-12 columns">
-			      <h2>MISSION STATEMENT</h2>
-				    <div class="large-12 columns" id="mission-statement">
-					    <p>Act as an educational and practical training ground for those students who are interested in pursuing radio as a career. Entertain and Inform our audience through innovative and consistent music and non-music programming. Serve the DePaul community by promoting University services, events, and activities. Work cooperatively with other campus groups and organizations to promote and support a varied and exciting collegiate experience for students.</p>
-					</div>
-				  </div>
-          </div>
-          <div class="animate-switch" ng-switch-when="Schedule">
-          	<div class="large-12 columns">
-			    <h2>JOIN RADIO DEPAUL</h2>
-			    <div class="large-12 columns" id="join-box">
-				    <h5 class="blue-text">Eligibility for Participation</h5>
-				    <p>
-					Only full-time students in good academic standing (2.5 GPA or higher) at DePaul are eligible for FULL membership in Radio DePaul. 
-					<br/>
-					University faculty members, staff and members of the community also shall be eligible for ASSOCIATE membership through petition to the Student Advisory Committee. 
-					<br/>Membership constitutes active participation in the organization. 
-					<br/>Radio DePaul shall not discriminate against any person on the basis of race, color, sex, sexual preference, disabilities, national origin, religious affiliation, or beliefs. 
-					</p>
-					<h5 class="blue-text">Rights and Privileges of Membership</h5>
-					<p>The number of persons who may be members of Radio DePaul may be limited depending on the availability of on or off-air positions. 
-					<br/>Only FULL members of the organization shall be eligible to hold management positions.</p>
-					<a href="http://radiodepaul.herokuapp.com/application/"><input class="button" value="Apply Now" /></a>
-				</div>
-			</div>
-          </div>
-
-      </div>
 	</div>
 </div>
 -->

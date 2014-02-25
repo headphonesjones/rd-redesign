@@ -5,6 +5,7 @@
 	background-color: rgba(200, 200, 200, 0.4);
 	border-bottom: 4px solid #00CDCD;
 	text-align: center;
+	z-index: 0;
 	&:hover{
 		background-color: rgba(200, 200, 200, 0.6);
 		border-bottom: 4px solid #008B8B;
@@ -21,4 +22,15 @@
 #middle-podcast{
 	border-left: 1px solid white;
 	border-right: 1px solid white;
+}
+#sports-player{
+	z-index: 1;
+	width: 150px;
+	position: relative;
+	right: 8px;
+	top: 30px;
+}
+#sports-home-image{
+	height: 100%;
+	width: 120%;
 }
