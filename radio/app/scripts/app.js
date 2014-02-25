@@ -28,6 +28,7 @@ angular.module('radioApp', [
       })
       .when('/sports', {
         templateUrl: 'views/sports.html',
+        controller: 'SportsController'
       })
       .when('/shows/:showId', {
         templateUrl: 'views/show.html',
@@ -86,6 +87,7 @@ function loadJS(src, callback) {
 }
 
 var myVideo=document.getElementById("audio-player-hidden");
+var sportsPlayer=document.getElementById("sports-player");
 var audioSupport = !!(myVideo.canPlayType && myVideo.canPlayType('audio/mpeg;').replace(/no/, ''));
 function playVid()
   {
@@ -104,6 +106,19 @@ function pauseVid()
   document.getElementById("play-icon").style.display = 'inline-block';
   document.getElementById("pause-icon").style.display = 'none';
   } 
+function playSports()
+  {
+      sportsPlayer.play();
+      volume: 75;
+      document.getElementById("sports-pause-icon").style.display = 'inline-block';
+      document.getElementById("sports-play-icon").style.display = 'none';
+  }
+function pauseSports()
+  {
+  sportsPlayer.pause();
+  document.getElementById("sports-play-icon").style.display = 'inline-block';
+  document.getElementById("sports-pause-icon").style.display = 'none';
+  } 
 
 
   function mute()
@@ -117,6 +132,18 @@ function pauseVid()
     myVideo.play();
     document.getElementById("volume-off").style.display = 'none';
     document.getElementById("volume").style.display = 'inline-block';
+    } 
+    function sportsMute()
+    {
+    myVideo.pause();
+    document.getElementById("sports-volume-off").style.display = 'inline-block';
+    document.getElementById("sports-volume").style.display = 'none';
+    }
+  function sportsUnmute()
+    {
+    myVideo.play();
+    document.getElementById("sports-volume-off").style.display = 'none';
+    document.getElementById("sports-volume").style.display = 'inline-block';
     } 
 
     function showChat()

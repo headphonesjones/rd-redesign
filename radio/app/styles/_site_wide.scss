@@ -5,6 +5,7 @@ body{
   	-o-background-size: cover;
   	background-size: cover;
   	margin-bottom: 60px;
+  	text-shadow: 1px 1px 2px black;
 }
 h1, h2, h3, h4, h5{
 	color: white;
@@ -48,12 +49,13 @@ article{
 	height: 120px;
 	text-align: center;
 	margin-right: 10px;
+	overflow: hidden;
 }
 .on-air-up-next:hover{
 	background-color: rgba(0,0,0, .8);
 	border-bottom: 4px solid #008B8B;
 }
-#play-icon{
+#play-icon, #sports-play-icon{
 	color: #FAFAFA;
 	transition: color .15s ease-in;
 	-webkit-transition: color .15s ease-in; 
@@ -65,7 +67,7 @@ article{
 		color: #00CDCD;
 	}
 }
-#pause-icon{
+#pause-icon, #sports-pause-icon{
 	color: #FAFAFA;
 	transition: color .15s ease-in;
 	-webkit-transition: color .15s ease-in; 
@@ -78,7 +80,7 @@ article{
 		color: #cc0000;
 	}
 }
-#volume{
+#volume, #sports-volume{
 	color: #FAFAFA;
 	transition: color .15s ease-in;
 	-webkit-transition: color .15s ease-in; 
@@ -90,7 +92,7 @@ article{
 		color: #cc0000;
 	}
 }
-#volume-off{
+#volume-off, #sports-volume-off{
 	color: #cc0000;
 	display: none;
 	transition: color .15s ease-in;
@@ -151,4 +153,24 @@ article{
 	right: 20px;
 	background-color: rgba(0,0,0, .6);
 	display: none;
+}
+.footer-links-text{
+	position: relative;
+	top: 18px;
+}
+#slogan{
+	width: 130px;
+	float: left;
+	position: absolute;
+	top: 20px;
+	left: 170px;
+	color: #FAFAFA;
+}
+#FTK{
+	float: right;
+	background-color: red;
+	color: #FAFAFA;
+}
+.shadow{
+	text-shadow: 1px 1px 2px black;
 }

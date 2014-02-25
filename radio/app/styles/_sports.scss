@@ -1,0 +1,24 @@
+#sports-listen-box{
+	height: 180px;
+	float: right;
+	margin-top: 48px;
+	background-color: rgba(200, 200, 200, 0.4);
+	border-bottom: 4px solid #00CDCD;
+	text-align: center;
+	&:hover{
+		background-color: rgba(200, 200, 200, 0.6);
+		border-bottom: 4px solid #008B8B;
+	}
+}
+.crop{
+	height: 400px;
+	overflow: hidden;
+	border: 10px solid white;
+}
+.margin-left{
+	margin-left: 10px;
+}
+#middle-podcast{
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}

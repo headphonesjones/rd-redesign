@@ -1,7 +1,7 @@
 <div class="row" style="margin-top: 50px; background-color: rgba(0,0,0, .6); padding-bottom: 20px; padding-top: 10px;">
   <div class="large-12 columns" id="person-container">
     <div class="large-4 columns small-6">
-      <h3 style="color: #FFF; position:">{{person.name}}</h3>
+      <h3 style="color: #FFF; position:"><b>{{person.name}}</b></h3>
       <img ng-src="{{person.avatar_medium}}" style="padding-top: 10px;">
         <div class="twitter-icon">
           <a ng-href="http://www.twitter.com/{{person.twitter_username}}">
@@ -16,15 +16,15 @@
     </div>
     <div class="large-8 columns small-6 show-about">
       <h3 class="blue-text">About Me</h3>
-      <p>{{person.bio}}</p>
+      <p class="shadow">{{person.bio}}</p>
       <h3 class="blue-text">Influences</h3>
-      <p>{{person.influences}}</p>
+      <p class="shadow">{{person.influences}}</p>
       <h3 class="blue-text">Major</h3>
-        <p>{{person.major}}</p>
+        <p class="shadow">{{person.major}}</p>
       <h3 class="blue-text">Hometown</h3>
-        <p>{{person.hometown}}</p>
+        <p class="shadow">{{person.hometown}}</p>
       <h3 class="blue-text">Class Year</h3>
-        <p>{{person.class_year}}</p>
+        <p class="shadow">{{person.class_year}}</p>
       <h3 class="blue-text">Hosted Show(s)</h3>
       <a ng-repeat="show in person.shows" ng-href="#/shows/{{show.id}}" class="button">{{show.title}}</a>
     </div>

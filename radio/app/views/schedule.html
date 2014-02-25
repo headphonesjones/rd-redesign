@@ -9,12 +9,12 @@
           </ul>
     	  </nav>
       </div>
-    <h3>AM</h3>
+    <h3><b>SCHEDULE</b></h3>
 	  <hr/>
   		
   		<a a ng-href="#/shows/{{slot.show.id}}" 
       class="large-3 small-6 columns schedule-square" 
-      ng-repeat="slot in filteredShows = (schedule | filter: {weekdays:selected}) | filter: {start_time:'AM'}">
+      ng-repeat="slot in filteredShows = (schedule | filter: {weekdays:selected})">
   			<div class="large-12 columns">
     			<img ng-src="{{slot.show.avatar_medium}}" width="181px" height="181px" class="show-avatar">
     		</div>
@@ -39,38 +39,5 @@
     		</div>
   		</a>
     </div>
-    <div class="large-12 columns">
-  		<h3 id="PM">PM</h3>
-    	<hr/>
-    </div>
-    <div class="large-12 columns">
-      <a a ng-href="#/shows/{{slot.show.id}}" 
-      class="large-3 small-6 columns schedule-square" 
-      ng-repeat="slot in filteredShows = (schedule | filter: {weekdays:selected}) | filter: {start_time:'PM'}">
-			<div class="large-12 columns">
-  			<img ng-src="{{slot.show.avatar_medium}}" width="181px" height="181px" class="show-avatar">
-  		</div>
-  		<div class="large-12 columns">
-  			<h4 class="show-name blue-text" text-fit>{{slot.show.title}}</h4>
-  			<h5 text-fit id="show-host-schedule">{{slot.show.hosts_list}}</h5>
-
-  			</div>
-  			<div class="row">
-          <div class="large-12 small-12 column times-container">
-    				<div class="large-4 large-offset-1 columns times times-fix">
-    					{{slot.start_time}}
-    				</div>
-    				<div class="large-2 columns times-fix">
-    				to
-    				</div>
-    				<div class="large-4 columns times times-fix">
-    					{{slot.end_time}}
-    				</div>
-    				<div class="large-1 columns">
-    				</div>
-          </div>
-  		</div>
-		</a>
-
   </div>
 	</div>

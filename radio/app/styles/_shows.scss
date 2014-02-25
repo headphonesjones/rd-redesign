@@ -62,6 +62,7 @@
 }
 .blue-text{
   color: #00CDCD;
+  overflow: hidden;
 }
 .show-about{
   border-left: 1px solid rgba(200,200,200, .5);
@@ -71,11 +72,6 @@
 }
 #social-show-container > img {
   display: inline;
-}
-.show-name{
-  font-size: 60px;
-  overflow: scroll;
-  height: 60px;
 }
 .show-hosts{
   height: 50px;

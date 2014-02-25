@@ -27,7 +27,7 @@
           <h1 class="h1-class">LATEST <b>NEWS</b></h1>
       </div>
       
-      <article ng-repeat="story in news">
+      <article ng-repeat="story in news | orderBy:predicate:reverse">
         <div class="small-12 columns news-container">
           <div class="small-12 medium-4 columns">
             <img ng-src="{{story.image_url}}" width=300 height=200 />
@@ -46,7 +46,7 @@
       <!-- COMING UP -->
       <div class="row home-content">
         <div class="small-12 columns" style="margin-top: 10px;">
-            <h1 class="h1-class">COMING <b>UP</b></h1>
+            <h1 class="h1-class"><b>EVENTS</b></h1>
         </div>
         <article ng-repeat="event in events">
           <div class="small-12 columns medium-6 coming-up-container">
@@ -71,18 +71,18 @@
       </ul>
     -->
       <a href="http://www.pizanoschicago.com/" target="_blank">
-        <div class="large-12 columns" style="margin-bottom: 15px;">
-          <img src="/images/pizanos.jpg" />
+        <div class="large-6 columns" style="margin-bottom: 15px;">
+          <img src="/images/pizanos2.jpg" />
         </div>
       </a>
       <br/><br/>
       <a href="http://www.derbychicago.com/" target="_blank">
-        <div class="large-6 columns" style="margin-top: 15px;">
+        <div class="large-6 columns" style="margin-bottom: 15px; position: relative; bottom: 30px;">
           <img src="/images/derby.png" />
         </div>
       </a>
       <a href="http://www.bacinos.com/" target="_blank">
-        <div class="large-6 columns" style="margin-top: 15px;"> 
+        <div class="large-6 columns" style="margin-top: 15px; position: relative; bottom: 45px;"> 
           <img src="/images/bacinos2.png" />
         </div>
       </a>

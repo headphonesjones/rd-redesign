@@ -1,6 +1,6 @@
 	.on-air-show-name{
 		height: 55px;
-		overflow-y: scroll;
+		overflow: hidden;
 	}
 	@media screen and (max-width: 1024px) {
 	.on-air-up-next{
@@ -10,11 +10,11 @@
 	border-left: 2px solid rgba(0,0,0, .8);
 	}
 	#on-air{
-		margin-left: 30%;
+		margin-left: 27.5%;
 		margin-bottom: 50px;
 	}
 	#up-next{
-		margin-left: 62.5%
+		margin-left: 62%
 	}
 
 	nav{
@@ -28,8 +28,12 @@
 	}
 	#listen-box{
 		position: relative;
-		left: -5px;
+		left: -12px;
 		top: 10px;
+	}
+	#webcam-player{
+	width:500px;
+	height: 200px;
 	}
 
 	body > header{

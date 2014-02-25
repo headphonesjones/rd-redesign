@@ -4,7 +4,7 @@
 		   <h4 style="color: white; margin-top: 10px;">STAFF</h4>
       </div>
       <div class="large-5 columns">
-        <input type="text" placeholder="Search for a Staff Member" style="margin-top: 12px;" ng-model='staffSearchText' />
+        <input type="text" placeholder="Search for a Staff Member" id="search-box" style="margin-top: 12px;" ng-model='staffSearchText' />
       </div>
     </div>
       <div class="large-12 columns">
@@ -20,3 +20,8 @@
       </div>
     <pagination page-size='8' count='filteredItems.length'></pagination>
 </div>
+<script>
+window.onload = function() {
+  document.getElementById("search-box").focus();
+};
+</script>
