@@ -17,12 +17,12 @@
         <section id="podcasts">
           <h3 class="blue-text">Podcasts</h3>
           <div ng-repeat="podcast in show.podcasts">
-            <h5 class="blue-text podcast-date">{{podcast.created_at | date}}</h5>
+            <!-- <h5 class="blue-text podcast-date">{{podcast.created_at | date}}</h5> -->
             <audio controls>
               <source ng-src="{{podcast.file}}" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <p class="blue-text">{{podcast.description}}</p>
+            <p style="color: #FAFAFA;">{{podcast.description}}</p>
           </div>
         </section>
     </div>

@@ -1,5 +1,5 @@
 body{
-	background: url(../images/record3.gif) no-repeat center center fixed; 
+	background: url(http://i.imgur.com/fLnK4Qb.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -23,6 +23,30 @@ footer{
 			padding-bottom: 0;
 		}
 	}
+}
+.button{
+	margin-right: 5px;
+}
+.rotate{
+    -webkit-transition-duration: 1.8s;
+    -moz-transition-duration: 1.8s;
+    -o-transition-duration: 1.8s;
+    transition-duration: 1.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+ 
+    }   
+ 
+.rotate:hover   
+{ 
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg); 
+    -o-transform:rotate(360deg);
 }
 .h1-class{
 	font-size: 1.5em;

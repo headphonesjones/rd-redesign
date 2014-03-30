@@ -2,12 +2,26 @@
 		height: 55px;
 		overflow: hidden;
 	}
+	#text-link{
+		position: absolute; 
+		top: 80px; 
+		right: 0px; 
+		background-color: rgba(0,0,0, .6); 
+		width: 122px;
+	}
 	@media screen and (max-width: 1024px) {
 	.on-air-up-next{
 	position: absolute;
 	top: 200px;
 	border-right: 2px solid rgba(0,0,0, .8);
 	border-left: 2px solid rgba(0,0,0, .8);
+	}
+	#text-link{
+		position: absolute; 
+		top: 20px; 
+		right: 0px; 
+		background-color: rgba(0,0,0, .6); 
+		width: 122px;
 	}
 	#on-air{
 		margin-left: 27.5%;
@@ -30,6 +44,13 @@
 		position: relative;
 		left: -12px;
 		top: 10px;
+	}
+	#text-link{
+		position: absolute; 
+		top: 470px; 
+		left: 0px; 
+		background-color: rgba(0,0,0, .6); 
+		width: 152px;
 	}
 	#webcam-player{
 	width:500px;

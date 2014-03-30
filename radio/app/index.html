@@ -20,6 +20,13 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/icon.png")>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/icon.png")> 
 
+    <link rel="stylesheet" type="text/css" href="//releases.flowplayer.org/5.4.6/skin/minimalist.css">
+    <!-- flowplayer depends on jQuery 1.7.1+ -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+   <!-- flowplayer javascript component -->
+   <script src="//releases.flowplayer.org/5.4.6/flowplayer.min.js"></script>
+
     <script src="http://jwpsrv.com/library/GgcroA5wEeOwaBIxOUCPzg.js"></script>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- bower:css -->
@@ -41,7 +48,7 @@
 
         <div class="large-12 columns" ng-controller='OnAirController')>
           <div class="large-4 columns">
-            <img src="/images/logo.png" id="logo" alt="Radio Depaul Logo" />
+            <img src="/images/logo.png" id="logo" alt="Radio Depaul Logo" class="rotate"/>
             <h4 class="show-for-medium-up" id="slogan"><b>Chicago's College Connection</b></h4>  
           </div>
             <div class="large-2 small-4 large-offset-1 columns on-air-up-next" id="listen-box">
@@ -77,7 +84,9 @@
         <li ng-click="showNav = false"><a href="#/sports">SPORTS</a></li>
         <!--<li ng-click="showNav = false"><a href="#/media">MEDIA</a></li> -->
         <li ng-click="showNav = false"><a href="http://radiodepaul.herokuapp.com/application/">APPLY</a></li>
-        <li ng-click="showNav = false" id="FTK"><a href="http://www.demonthon.org" name="For The Kids" target="_blank">FTK</a></li>
+        <li ng-click="showNav = false" id="text-link" ><a href="tel:+773-325-7341">
+        <img src="https://www.zipwhip.com/resources/media/reverse_zipwhip_tag-160-8.png" width="122px"><br/><span style="position: relative; top: 10px;">TEXT THE DJ!</span> 773-325-7341</a></li>
+        <li ng-click="showNav = false" id="FTK"><a href="http://www.demonthon.org" name="For The Kids" target="_blank">FTK</a>
         </ul>
       </nav>
     </header>
@@ -111,11 +120,11 @@
                 <li><a href="http://communication.depaul.edu/resources/student-organizations/Pages/good-day-depaul.aspx" target="_blank">Good Day DePaul</a></li>
             </ul>
         </div>
-        <div class="large-4 small-6 columns" id="facebook-widget">
+        <div class="large-4 small-12 columns" id="facebook-widget">
           <h4>OUR <b>FACEBOOK</b></h4>
           <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FRadioDepaul&amp;width=250&amp;height=400&amp;colorscheme=dark&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=419461828142439" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:400px; color: white;" allowtransparency="true"></iframe>
         </div>
-        <div class="large-4 small-six columns">
+        <div class="large-4 small-12 columns">
           <h4>OUR <b>TWITTER</b></h4>
             <a class="twitter-timeline" width="350" height="400" href="https://twitter.com/radiodepauldjs" data-widget-id="363308094438133760" data-theme="dark">Tweets by @radiodepauldjs</a>
              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
