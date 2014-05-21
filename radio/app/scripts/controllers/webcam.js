@@ -2,6 +2,7 @@
 
 angular.module('radioApp')
 
+
 .controller('WebcamController', function($scope){
         loadJS('http://jwpsrv.com/library/GgcroA5wEeOwaBIxOUCPzg.js', function() { 
         jwplayer('webcam-player').setup({
@@ -18,7 +19,7 @@ angular.module('radioApp')
                     file: 'rtmp://ec2-67-202-3-106.compute-1.amazonaws.com/rtplive/mp4:camera.stream',
                 }]
             }],
-            primary: "flash"
+            primary: "HTML5"
 
         });
     });

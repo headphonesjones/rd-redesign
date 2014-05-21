@@ -1,10 +1,31 @@
+<style type="text/css">
+#iphone-player{
+    display: none;
+    position: relative;
+    bottom: 200px;
+}
+</style>
+
 <div class="row" style="margin-top: 50px; background-color: rgba(0,0,0, .6); padding-bottom: 20px; padding-top: 10px;">
 	<div class="large-12 columns">
 		<h3 class="blue-text">Please click play at the top of the page to get audio with your video.</h3>
 		<div id="webcam-player"></div>
+
+		<iframe src="http://www.josamjohn.com/radio-depaul-webcam/webcam.html" width="100%" height="100%" id="iphone-player">
+
+		</iframe>
 		<div class="large-2 columns show-for-medium-up" onClick="showChat();">
 			<br/>
           <input class="button" value="Live Chat" />
         </div>
 	</div>
 </div>
+
+<script type="text/javascript">
+if((navigator.userAgent.match(/iPhone/i)) || 
+ (navigator.userAgent.match(/iPod/i))) {
+   if (document.cookie.indexOf("iphone_redirect=false") == -1) 
+
+   	document.getElementById("iphone-player").style.display = 'block';
+}
+</script>
